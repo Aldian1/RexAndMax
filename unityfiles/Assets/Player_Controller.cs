@@ -15,21 +15,19 @@ public class Player_Controller : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		if (Input.GetKeyDown (KeyCode.D) || Input.GetKeyDown (KeyCode.A)) {
+		if (Input.GetKeyDown (KeyCode.D) && !Input.GetKey(KeyCode.A)) {
+			transform.rotation = Quaternion.Euler (0, 0, 0);
 			AR.SetBool ("Run", true);
-			if (Input.GetKeyDown (KeyCode.D)) {
-				transform.Rotate(Vector3.
-			}
+		}
 
-			if (Input.GetKeyDown (KeyCode.A)) {
-
-			}
+		if (Input.GetKeyDown (KeyCode.A) && !Input.GetKey(KeyCode.D)) {
+			transform.rotation = Quaternion.Euler (0, 180, 0);
 
 		}
-		if (Input.GetKeyUp (KeyCode.D) || Input.GetKeyUp (KeyCode.A)) {
+
+		/*if (Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp(KeyCode.D)) {
 			AR.SetBool ("Run", false);
-
-		}
+		}*/
 
 
 		if (Input.GetKey (KeyCode.D)) {
