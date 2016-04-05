@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityStandardAssets.Utility;
+using UnityStandardAssets._2D;
 
 public class Player_Controller : MonoBehaviour {
 
@@ -8,16 +10,19 @@ public class Player_Controller : MonoBehaviour {
 
 	public float speed;
 
-	public GameObject rex;
+	public GameObject othercharacter;
 
 	public Rigidbody2D rb;
 
 	public float Jumpower;
+
+	public GameObject camera_;
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody2D> ();
 		AR = GetComponent<Animator> ();
-		Physics2D.IgnoreCollision (rex.GetComponent<Collider2D> (), this.GetComponent<Collider2D> ());
+		Physics2D.IgnoreCollision (othercharacter.GetComponent<Collider2D> (), this.GetComponent<Collider2D> ());
+		AR.SetBool ("Run", true);
 	}
 	
 	// Update is called once per frame
@@ -50,6 +55,14 @@ public class Player_Controller : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			Debug.Log ("jump");
 			rb.AddForce (Vector2.up * Jumpower);
+		}
+
+		if (Input.GetKeyDown (KeyCode.Mouse0)) {
+			othercharacter.GetComponent<FollowerScript> ().enabled = false;
+			othercharacter.GetComponent<Player_Controller> ().enabled = true;
+			this.GetComponent<FollowerScript> ().enabled = true;
+			this.GetComponent<Player_Controller> ().enabled = false;
+			camera_.GetComponent<Camera2DFollow> ().target = othercharacter.transform;
 		}
 	}
 }
