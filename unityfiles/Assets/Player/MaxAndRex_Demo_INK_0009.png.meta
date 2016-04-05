@@ -1,9 +1,11 @@
 fileFormatVersion: 2
 guid: b3c05e6688f8832448e92f68be06a746
-timeCreated: 1459541165
+timeCreated: 1459810744
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: MaxAndRex_Demo_INK_0009_0
+    21300002: MaxAndRex_Demo_INK_0009_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +32,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +40,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +51,73 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: MaxAndRex_Demo_INK_0009_0
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 55
+        width: 352
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 73, y: -1}
+        - {x: 159, y: 30}
+        - {x: 176, y: 53}
+        - {x: 176, y: 97}
+        - {x: 171, y: 112}
+        - {x: 111, y: 161}
+        - {x: 29, y: 161}
+        - {x: 20, y: 159}
+        - {x: -47, y: 77}
+        - {x: -26, y: 44}
+        - {x: -148, y: 23}
+        - {x: -157, y: 5}
+        - {x: -176, y: -51}
+        - {x: -176, y: -101}
+        - {x: -163, y: -135}
+        - {x: -138, y: -161}
+        - {x: -134, y: -161}
+        - {x: -112, y: -154}
+        - {x: -13, y: -97}
+        - {x: 38, y: -161}
+        - {x: 73, y: -161}
+        - {x: 125, y: -84}
+        - {x: 110, y: -60}
+        - {x: 59, y: -42}
+    - name: MaxAndRex_Demo_INK_0009_1
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 103
+        width: 310
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 155, y: -18}
+        - {x: 155, y: 59}
+        - {x: 110, y: 137}
+        - {x: 58, y: 137}
+        - {x: 52, y: 135}
+        - {x: -11, y: 76}
+        - {x: -78, y: -18}
+        - {x: -41, y: -30}
+        - {x: -15, y: -27}
+        - {x: 0, y: -14}
+        - {x: 1, y: -9}
+        - {x: 10, y: -7}
+        - {x: -26, y: -40}
+        - {x: -155, y: -64}
+        - {x: -155, y: -137}
+        - {x: 155, y: -137}
+        - {x: 155, y: -92}
+        - {x: 152, y: -79}
+        - {x: 135, y: -71}
+        - {x: 106, y: -76}
     outline: []
   spritePackingTag: 
   userData: 

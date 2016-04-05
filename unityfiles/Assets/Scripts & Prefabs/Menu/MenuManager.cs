@@ -1,13 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class MenuManager : MonoBehaviour {
+	
 	public GameObject splash,main,options,levelselect;
+
+
 	// Use this for initialization
 	void Start () {
 	
 	}
-
 	public void OpenWebsite()
 	{
 		Application.OpenURL("http://maxandrex.com/");
@@ -33,6 +37,10 @@ public class MenuManager : MonoBehaviour {
 		if (button.name == "LevelSelect") {
 			main.SetActive (false);
 			levelselect.SetActive (true);
+		}
+
+		if (button.tag == "Tile") {
+			SceneManager.LoadScene (button.name);
 		}
 	}
 }
