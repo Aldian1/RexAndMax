@@ -79,7 +79,7 @@ public class Player_Controller : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			Debug.Log ("jump");
+			//Debug.Log ("jump");
 			rb.AddForce (Vector2.up * Jumpower);
 		}
 

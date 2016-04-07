@@ -18,16 +18,21 @@ public class LevelController : MonoBehaviour {
 
 	public Text Score;
 
-	private GameObject max,rex;
+	public GameObject max,rex;
+
+	public AudioSource ad;
 
 	// Use this for initialization
 	void Start () {
 		max = GameObject.FindGameObjectWithTag ("Player");
 		rex = GameObject.FindGameObjectWithTag ("Rex");
+		ad = GetComponent<AudioSource> ();
 	}
 
 	public void GO()
 	{
+
+
 
 		Score.text = "Score: " + score.ToString();
 		deaths.text = "Deaths: " + deaths.ToString ();
@@ -51,5 +56,6 @@ public class LevelController : MonoBehaviour {
 		endoflevelscreen.SetActive (true);
 		PlayerPrefs.SetFloat (SceneManager.GetActiveScene().name, lives);
 		PlayerPrefs.Save ();
+		ad.volume = 0.5F;
 	}
 }
