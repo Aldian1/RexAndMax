@@ -14,13 +14,18 @@ public class FollowerScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		thistransform = transform;
+		target.parent.GetComponent<Animator> ().SetBool ("Run", true);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		transform.position = Vector2.SmoothDamp (transform.position, target.position, ref velocity, Time.deltaTime * smoothtime);
-		transform.rotation = target.rotation;
+		if (Vector2.Distance (transform.position, target.position) < 8) {
+			transform.position = Vector2.SmoothDamp (transform.position, target.position, ref velocity, Time.deltaTime * smoothtime);
+			transform.rotation = target.rotation;
+
+
+		}
 
 	}
 }
