@@ -26,8 +26,12 @@ public class Player_Controller : MonoBehaviour {
 	public GameObject fireball;
 
 	public  List<GameObject> fireballs = new List<GameObject>() ;
+
+    public bool onground;
 	// Use this for initialization
 	void Start () {
+  
+
 		rb = GetComponent<Rigidbody2D> ();
 		AR = GetComponent<Animator> ();
 		Physics2D.IgnoreCollision (othercharacter.GetComponent<Collider2D> (), this.GetComponent<Collider2D> ());
@@ -54,15 +58,12 @@ public class Player_Controller : MonoBehaviour {
 			}
 		}
 
-		if (Input.GetKeyDown (KeyCode.D) && !Input.GetKey(KeyCode.A)) {
-			transform.rotation = Quaternion.Euler (0, 0, 0);
-			AR.SetBool ("Run", true);
-		}
+		if (Input.GetKey (KeyCode.D)) {
+                AR.SetBool("Run", true);
+        }
 
-		if (Input.GetKeyDown (KeyCode.A) && !Input.GetKey(KeyCode.D)) {
-			transform.rotation = Quaternion.Euler (0, 180, 0);
-			AR.SetBool ("Run", true);
-
+		if (Input.GetKey (KeyCode.A)) {
+                AR.SetBool("Run", true);
 		}
 
 	
@@ -72,17 +73,15 @@ public class Player_Controller : MonoBehaviour {
 
 		if (Input.GetKey (KeyCode.D)) {
 			transform.Translate (transform.right * speed * Time.deltaTime);
-		}
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
 
 		if (Input.GetKey (KeyCode.A)) {
-			transform.Translate (-transform.right * speed * Time.deltaTime);
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+            transform.Translate (-transform.right * speed * Time.deltaTime);
 		}
 
-		if (Input.GetKeyDown (KeyCode.Space)) {
-			//Debug.Log ("jump");
-			rb.AddForce (Vector2.up * Jumpower);
-		}
-
+	
 		if (Input.GetKeyDown (KeyCode.Mouse0)) {
 			othercharacter.GetComponent<FollowerScript> ().enabled = false;
 			othercharacter.GetComponent<Player_Controller> ().enabled = true;
@@ -90,5 +89,49 @@ public class Player_Controller : MonoBehaviour {
 			this.GetComponent<Player_Controller> ().enabled = false;
 			camera_.GetComponent<Camera2DFollow> ().target = othercharacter.transform;
 		}
+
+        if (onground == true)
+        {
+
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up * 20);
+
+        if (hit.transform.gameObject.layer == 8)
+            {
+          
+               
+                Debug.DrawRay(transform.position, -Vector2.up * 20, Color.red);
+
+               
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    //Debug.Log ("jump");
+                    onground = false;
+                    rb.AddForce(Vector2.up * Jumpower);
+                   
+                    return;
+                }
+
+            }
+        }
+
+      
+
+        if (onground == false)
+        {
+            RaycastHit2D hit_ = Physics2D.Raycast(transform.position, -Vector2.up * 20);
+            Debug.DrawRay(transform.position, -Vector2.up * 20, Color.green);
+
+            Debug.Log(Vector2.Distance(hit_.transform.position, transform.position));
+            Debug.Log(hit_.transform.name);
+
+            if (Vector2.Distance(hit_.transform.position, transform.position) < 3.4F)
+            {
+                Debug.Log(Vector2.Distance(hit_.transform.position, transform.position));
+                onground = true;
+                return;
+            }
+
+        }
 	}
+
 }
