@@ -28,10 +28,11 @@ public class Player_Controller : MonoBehaviour {
 	public  List<GameObject> fireballs = new List<GameObject>() ;
 
     public bool onground;
+
+    private GameObject debugger;
 	// Use this for initialization
 	void Start () {
-  
-
+        
 		rb = GetComponent<Rigidbody2D> ();
 		AR = GetComponent<Animator> ();
 		Physics2D.IgnoreCollision (othercharacter.GetComponent<Collider2D> (), this.GetComponent<Collider2D> ());
@@ -43,7 +44,7 @@ public class Player_Controller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+      
 		if (isrex) {
 			if (fireballs.Count > 0) {
 				if (fireballs [0] == null) {
@@ -91,47 +92,42 @@ public class Player_Controller : MonoBehaviour {
 		}
 
         if (onground == true)
-        {
-
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up * 20);
-
-        if (hit.transform.gameObject.layer == 8)
-            {
-          
-               
-                Debug.DrawRay(transform.position, -Vector2.up * 20, Color.red);
-
-               
+        { 
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
                     //Debug.Log ("jump");
                     onground = false;
                     rb.AddForce(Vector2.up * Jumpower);
-                   
-                    return;
+                Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.red);
+                return;
                 }
-
-            }
         }
-
-      
-
         if (onground == false)
         {
-            RaycastHit2D hit_ = Physics2D.Raycast(transform.position, -Vector2.up * 20);
-            Debug.DrawRay(transform.position, -Vector2.up * 20, Color.green);
+            Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.green);
 
-            Debug.Log(Vector2.Distance(hit_.transform.position, transform.position));
-            Debug.Log(hit_.transform.name);
-
-            if (Vector2.Distance(hit_.transform.position, transform.position) < 3.4F)
-            {
-                Debug.Log(Vector2.Distance(hit_.transform.position, transform.position));
-                onground = true;
-                return;
-            }
+          //  Debug.Log(Vector2.Distance(hit_.transform.position, transform.position));
 
         }
 	}
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        
+            if (col.transform.tag == "Ground")
+        {
+            onground = true;
+        }
+    }
 
+    void OnCollisionExit2D(Collision2D col)
+    {
+        if(onground == true)
+        if (col.transform.tag == "Ground")
+        {
+                
+                onground = false;
+                OnCollisionEnter2D(col);
+                return;
+            }
+    }
 }
