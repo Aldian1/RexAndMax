@@ -30,9 +30,14 @@ public class Player_Controller : MonoBehaviour {
     public bool onground;
 
     private GameObject debugger;
+
+    public bool invincible;
+
+    private Color sprite;
 	// Use this for initialization
 	void Start () {
-        
+
+        sprite = GetComponent<SpriteRenderer>().color;
 		rb = GetComponent<Rigidbody2D> ();
 		AR = GetComponent<Animator> ();
 		Physics2D.IgnoreCollision (othercharacter.GetComponent<Collider2D> (), this.GetComponent<Collider2D> ());
@@ -112,6 +117,16 @@ public class Player_Controller : MonoBehaviour {
 	}
     void OnCollisionEnter2D(Collision2D col)
     {
+
+        if(!invincible)
+        {
+            if(col.transform.tag == "Spikes")
+            {
+                rb.AddForce(new Vector2(-1, 1) * 1200);
+                invincible = true;
+                StartCoroutine("Invincible");
+            }
+        }
         
             if (col.transform.tag == "Ground")
         {
@@ -129,5 +144,17 @@ public class Player_Controller : MonoBehaviour {
                 OnCollisionEnter2D(col);
                 return;
             }
+    }
+
+    IEnumerator Invincible()
+    {
+        sprite.a = .5F;
+        GetComponent<SpriteRenderer>().color = sprite;
+        yield return new WaitForSeconds(3);
+        sprite.a = 1F;
+        GetComponent<SpriteRenderer>().color = sprite;
+        invincible = false;
+        StopCoroutine("Invincible");
+
     }
 }
