@@ -30,10 +30,13 @@ public class Player_Controller : MonoBehaviour {
     public bool onground;
 
     private GameObject debugger;
+    public GameObject rexballoon;
 
     public bool invincible;
 
     private Color sprite;
+
+    private bool keyboardcontrols;
 	// Use this for initialization
 	void Start () {
 
@@ -49,70 +52,72 @@ public class Player_Controller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-      
-		if (isrex) {
-			if (fireballs.Count > 0) {
-				if (fireballs [0] == null) {
-					fireballs.Clear ();
-				}
-			}
-			if (fireballs.Count < 3) {
-				if (Input.GetKeyDown (KeyCode.Mouse1)) {
-					GameObject go = Instantiate (fireball, rexfireball.position, Quaternion.identity) as GameObject;
-					fireballs.Add (go);
-				}
-			}
-		}
+        if (keyboardcontrols == true)
+        {
+            if (isrex) {
+                if (fireballs.Count > 0) {
+                    if (fireballs[0] == null) {
+                        fireballs.Clear();
+                    }
+                }
+                if (fireballs.Count < 3) {
+                    if (Input.GetKeyDown(KeyCode.Mouse1)) {
+                        GameObject go = Instantiate(fireball, rexfireball.position, Quaternion.identity) as GameObject;
+                        fireballs.Add(go);
+                    }
+                }
+            }
 
-		if (Input.GetKey (KeyCode.D)) {
+            if (Input.GetKey(KeyCode.D)) {
                 AR.SetBool("Run", true);
-        }
+            }
 
-		if (Input.GetKey (KeyCode.A)) {
+            if (Input.GetKey(KeyCode.A)) {
                 AR.SetBool("Run", true);
-		}
+            }
 
-	
-		if (!Input.GetKey (KeyCode.D) && !Input.GetKey (KeyCode.A)) {
-			AR.SetBool ("Run", false);
-		}
 
-		if (Input.GetKey (KeyCode.D)) {
-			transform.Translate (transform.right * speed * Time.deltaTime);
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
+            if (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A)) {
+                AR.SetBool("Run", false);
+            }
 
-		if (Input.GetKey (KeyCode.A)) {
-            transform.rotation = Quaternion.Euler(0, 180, 0);
-            transform.Translate (-transform.right * speed * Time.deltaTime);
-		}
+            if (Input.GetKey(KeyCode.D)) {
+                transform.Translate(transform.right * speed * Time.deltaTime);
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
 
-	
-		if (Input.GetKeyDown (KeyCode.Mouse0)) {
-			othercharacter.GetComponent<FollowerScript> ().enabled = false;
-			othercharacter.GetComponent<Player_Controller> ().enabled = true;
-			this.GetComponent<FollowerScript> ().enabled = true;
-			this.GetComponent<Player_Controller> ().enabled = false;
-			camera_.GetComponent<Camera2DFollow> ().target = othercharacter.transform;
-		}
+            if (Input.GetKey(KeyCode.A)) {
+                transform.rotation = Quaternion.Euler(0, 180, 0);
+                transform.Translate(-transform.right * speed * Time.deltaTime);
+            }
 
-        if (onground == true)
-        { 
+
+            if (Input.GetKeyDown(KeyCode.Mouse0)) {
+                othercharacter.GetComponent<FollowerScript>().enabled = false;
+                othercharacter.GetComponent<Player_Controller>().enabled = true;
+                this.GetComponent<FollowerScript>().enabled = true;
+                this.GetComponent<Player_Controller>().enabled = false;
+                camera_.GetComponent<Camera2DFollow>().target = othercharacter.transform;
+            }
+
+            if (onground == true)
+            {
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
                     //Debug.Log ("jump");
                     onground = false;
                     rb.AddForce(Vector2.up * Jumpower);
-                Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.red);
-                return;
+                    Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.red);
+                    return;
                 }
-        }
-        if (onground == false)
-        {
-            Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.green);
+            }
+            if (onground == false)
+            {
+                Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.green);
 
-          //  Debug.Log(Vector2.Distance(hit_.transform.position, transform.position));
+                //  Debug.Log(Vector2.Distance(hit_.transform.position, transform.position));
 
+            }
         }
 	}
     void OnCollisionEnter2D(Collision2D col)
@@ -156,5 +161,29 @@ public class Player_Controller : MonoBehaviour {
         invincible = false;
         StopCoroutine("Invincible");
 
+    }
+
+
+    public void GetItem(ItemDetection.Items item)
+    {
+        if(item == ItemDetection.Items.BalloonPowerup)
+        {
+            rexballoon.SetActive(true);
+            rb.gravityScale = -.2F;
+        }
+
+    }
+
+    //Debugger to change controls
+    public void ToggleButton(bool active)
+    {
+        if (active == true)
+        {
+            keyboardcontrols = true;
+        }
+        if(active == false)
+        {
+            keyboardcontrols = false;
+        }
     }
 }
