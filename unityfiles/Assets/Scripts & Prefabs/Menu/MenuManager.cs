@@ -5,9 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour {
 	
-	public GameObject splash,main,options,levelselect;
+	public GameObject HiddenButton, MasterFrame;
 
+    public GameObject[] menuitems;
 
+    public Sprite[] sceneimages;
+
+    public GameObject[] Stars;
 	// Use this for initialization
 	void Start () {
 	
@@ -19,28 +23,59 @@ public class MenuManager : MonoBehaviour {
 
 	public void Nextoverlay(Button button)
 	{
-		Debug.Log ("press");
-		if (button.name == "Main") {
-			splash.SetActive (false);
-			main.SetActive (true);
-		}
-		if (button.name == "Options") {
-			main.SetActive (false);
-			options.SetActive (true);
-		}
-
-		if (button.name == "Back") {
-			main.SetActive (true);
-			options.SetActive (false);
-		}
-
-		if (button.name == "LevelSelect") {
-			main.SetActive (false);
-			levelselect.SetActive (true);
-		}
+		
+		if (button.name == "HiddenButton") {
+            //StartCoroutine("Fade", button);
+            button.transform.FindChild("Text").GetComponent<Text>().CrossFadeAlpha(0, 1, false);
+            button.transform.FindChild("MR").GetComponent<Image>().CrossFadeAlpha(0, 1, false);
+            StartCoroutine("Disabler", button);
+        }
 
 		if (button.tag == "Tile") {
-			SceneManager.LoadScene (button.name);
+            LoadLevelDetails(button);
 		}
 	}
+
+   IEnumerator Disabler(Button button)
+    {
+        yield return new WaitForSeconds(1);
+        button.gameObject.SetActive(false);
+        if(button.name == "HiddenButton")
+        {
+            mainmenubuttons();
+        }
+    }
+
+    void mainmenubuttons()
+    {
+        foreach (GameObject item in menuitems)
+        {
+            item.SetActive(true);
+        }
+        MasterFrame.SetActive(false);
+    }
+
+    void LoadLevelDetails(Button button)
+    {
+        MasterFrame.SetActive(true);
+        MasterFrame.transform.FindChild("LN").GetComponent<Text>().text = button.name;
+
+        float t;
+        t = PlayerPrefs.GetFloat(button.name);
+        if(t == 3)
+        {
+            Stars[0].SetActive(true);
+            Stars[1].SetActive(true);
+            Stars[2].SetActive(true);
+        }
+        if(t == 2)
+        {
+            Stars[0].SetActive(true);
+            Stars[1].SetActive(true);
+        }
+        if(t == 1)
+        {
+            Stars[0].SetActive(true);
+        }
+    }
 }
