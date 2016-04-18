@@ -32,17 +32,27 @@ public class DialogueController : MonoBehaviour {
 
 	public CanvasGroup fadecanvas;
 
-	public GameObject player;
+	public GameObject player,rex;
+
+	public AudioClip[] audioclip;
+	public AudioSource ad;
 	// Use this for initialization
 	void Start () {
-		
+		ad = GetComponent<AudioSource> ();
 		//get the file and open it
 		info = new FileInfo(filepath);
 
 		reader = info.OpenText ();
 
 		fadecanvas = this.GetComponent<CanvasGroup> ();
+		fadecanvas.alpha = 0;
 
+		rex = GameObject.FindGameObjectWithTag ("Rex");
+		player = GameObject.FindGameObjectWithTag ("Player");
+		LockCharacter ();
+
+	
+		Invoke ("FirstRun", 1);
 
 	}
 	
@@ -145,11 +155,15 @@ public class DialogueController : MonoBehaviour {
 		if (portrait == "max") {
 			Debug.Log ("Change Max");
 			PortraitObject.sprite = MaxEmotions [i];
+			ad.clip = audioclip [0];
+			ad.Play ();
 		}
 
 		if (portrait == "rex") {
 			PortraitObject.sprite = RexEmotions [i];
 			Debug.Log ("Change Rex");
+			ad.clip = audioclip [1];
+			ad.Play ();
 		}
 
 
@@ -168,8 +182,37 @@ public class DialogueController : MonoBehaviour {
 		}
 	}
 
+	public IEnumerator fadein()
+	{
+		while (fadecanvas.alpha < 1) {
+			fadecanvas.alpha += .25F * Time.deltaTime;
+			yield return null;
+		}
+
+		if (fadecanvas.alpha == 1) {
+			
+			StopCoroutine ("fadein");
+		}
+	}
+
 	void UnlockCharacter()
 	{
+		StopCoroutine ("fadeout");
+		StopCoroutine ("fadein");
+		player.SetActive (true);
+		rex.SetActive (true);
+		Camera.main.GetComponent<LevelController> ().enabled = true;
+	}
 
+	void LockCharacter()
+	{
+		player.SetActive (false);
+		rex.SetActive (false);
+	}
+
+	public void FirstRun()
+	{
+		StartCoroutine("fadein");
+		buttonclick ();
 	}
 }
