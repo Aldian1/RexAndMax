@@ -30,13 +30,15 @@ public class Player_Controller : MonoBehaviour {
     public bool onground;
 
     private GameObject debugger;
-    public GameObject rexballoon;
+    public GameObject balloon;
 
     public bool invincible;
 
     private Color sprite;
 
     private bool keyboardcontrols;
+
+
 	// Use this for initialization
 	void Start () {
 
@@ -52,6 +54,12 @@ public class Player_Controller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if(Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            balloon.SetActive(false);
+            rb.gravityScale = 2.5F;
+        }
+
         if (keyboardcontrols == true)
         {
             if (isrex) {
@@ -127,7 +135,7 @@ public class Player_Controller : MonoBehaviour {
         {
             if(col.transform.tag == "Spikes")
             {
-                rb.AddForce(new Vector2(-1, 1) * 1200);
+                rb.AddForce(new Vector2(-1, 1) * 600);
                 invincible = true;
                 StartCoroutine("Invincible");
             }
@@ -168,7 +176,7 @@ public class Player_Controller : MonoBehaviour {
     {
         if(item == ItemDetection.Items.BalloonPowerup)
         {
-            rexballoon.SetActive(true);
+            balloon.SetActive(true);
             rb.gravityScale = -.2F;
         }
 
