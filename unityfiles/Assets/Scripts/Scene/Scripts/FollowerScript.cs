@@ -14,7 +14,7 @@ public class FollowerScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		thistransform = transform;
-		target.parent.GetComponent<Animator> ().SetBool ("Run", true);
+        this.GetComponent<Animator>().SetBool("running", true);
 	}
 	
 	// Update is called once per frame
@@ -23,9 +23,9 @@ public class FollowerScript : MonoBehaviour {
 		if (Vector2.Distance (transform.position, target.position) < 8) {
 			transform.position = Vector2.SmoothDamp (transform.position, target.position, ref velocity, Time.deltaTime * smoothtime);
 			transform.rotation = target.rotation;
+            this.GetComponent<Animator>().SetBool("running", false);
 
-
-		}
+        }
 
 	}
 }

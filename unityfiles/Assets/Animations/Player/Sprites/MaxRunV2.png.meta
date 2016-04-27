@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: 8bbe6728d8d646640abd2a18d22d8f16
+timeCreated: 1461604882
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MaxRunV2_0
+    21300002: MaxRunV2_1
+    21300004: MaxRunV2_2
+    21300006: MaxRunV2_3
+    21300008: MaxRunV2_4
+    21300010: MaxRunV2_5
+    21300012: MaxRunV2_6
+    21300014: MaxRunV2_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: MaxRunV2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 810
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 103}
+        - {x: -40, y: 61}
+        - {x: -76, y: -1}
+        - {x: -76, y: -77}
+        - {x: -19, y: -82}
+        - {x: 87, y: -82}
+        - {x: 87, y: -3}
+        - {x: 71, y: 50}
+        - {x: 33, y: 79}
+        - {x: -12, y: 103}
+    - name: MaxRunV2_1
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 0
+        width: 810
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 103}
+        - {x: -34, y: 103}
+        - {x: -54, y: -23}
+        - {x: -54, y: -117}
+        - {x: -30, y: -125}
+        - {x: 14, y: -125}
+        - {x: 49, y: -61}
+        - {x: 49, y: 50}
+        - {x: 29, y: 98}
+    - name: MaxRunV2_2
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 0
+        width: 810
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: 102}
+        - {x: -26, y: 102}
+        - {x: -43, y: 43}
+        - {x: -62, y: -103}
+        - {x: -62, y: -123}
+        - {x: -57, y: -126}
+        - {x: -30, y: -126}
+        - {x: 53, y: -83}
+        - {x: 53, y: 61}
+        - {x: 43, y: 99}
+    - name: MaxRunV2_3
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 0
+        width: 810
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 44.00006, y: -39}
+        - {x: 50.00006, y: -6}
+        - {x: 49.00006, y: -2}
+        - {x: 45.00006, y: 2}
+        - {x: 50.00006, y: 15}
+        - {x: 49.00006, y: 30}
+        - {x: 44.00006, y: 46}
+        - {x: 37.00006, y: 61}
+        - {x: 35.00006, y: 64}
+        - {x: 29.000061, y: 88}
+        - {x: -8.999939, y: 98}
+        - {x: -37.99994, y: 98}
+        - {x: -50.99994, y: 55}
+        - {x: -63.99994, y: -37}
+        - {x: -63.99994, y: -125}
+        - {x: -17.999939, y: -125}
+        - {x: 53.00006, y: -61}
+        - {x: 53.00006, y: -42}
+        - {x: 51.00006, y: -40}
+    - name: MaxRunV2_4
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 0
+        width: 810
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -93, y: -90}
+        - {x: 92, y: -90}
+        - {x: 92, y: 16}
+        - {x: 67, y: 103}
+        - {x: -62, y: 103}
+        - {x: -93, y: 25}
+    - name: MaxRunV2_5
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 0
+        width: 810
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 102}
+        - {x: -26, y: 101}
+        - {x: -50, y: 30}
+        - {x: -50, y: -125}
+        - {x: -10, y: -125}
+        - {x: 49, y: -90}
+        - {x: 49, y: 66}
+        - {x: 39, y: 102}
+    - name: MaxRunV2_6
+      rect:
+        serializedVersion: 2
+        x: 4860
+        y: 0
+        width: 810
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.499878, y: 101}
+        - {x: -29.499878, y: 101}
+        - {x: -45.499878, y: 72}
+        - {x: -52.499878, y: 11}
+        - {x: -52.499878, y: -95}
+        - {x: -8.499878, y: -125}
+        - {x: 18.500122, y: -125}
+        - {x: 33.500122, y: -119}
+        - {x: 48.500122, y: -77}
+        - {x: 48.500122, y: 74}
+        - {x: 27.500122, y: 88}
+      - - {x: 40.500122, y: -18}
+        - {x: 43.500122, y: -17}
+        - {x: 43.500122, y: -14}
+        - {x: 40.500122, y: -13}
+        - {x: 38.500122, y: -15}
+    - name: MaxRunV2_7
+      rect:
+        serializedVersion: 2
+        x: 5670
+        y: 0
+        width: 810
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.999878, y: 100}
+        - {x: -58.999878, y: 27}
+        - {x: -58.999878, y: -17}
+        - {x: -44.999878, y: -42}
+        - {x: -27.999878, y: -49}
+        - {x: -24.999878, y: -40}
+        - {x: -30.999878, y: -77}
+        - {x: -58.999878, y: -110}
+        - {x: -58.999878, y: -127}
+        - {x: -24.999878, y: -127}
+        - {x: 49.000122, y: -96}
+        - {x: 49.000122, y: 100}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
