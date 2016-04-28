@@ -12,6 +12,7 @@ public class ItemDetection : MonoBehaviour {
         BalloonPowerup = 0,
         MaxSligshotAmmo =1,
         Stars = 2,
+		GorillaMilk =3,
         
     };
 

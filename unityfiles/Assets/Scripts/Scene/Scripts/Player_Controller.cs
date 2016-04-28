@@ -142,6 +142,10 @@ public class Player_Controller : MonoBehaviour
             GameObject.Find("StarCounter").GetComponent<StarCounter>().AddStars(1);
         }
 
+		if (item == ItemDetection.Items.GorillaMilk) {
+			GorillaMode ();
+		}
+
     }
 
     //Debugger to change controls
@@ -239,5 +243,22 @@ public class Player_Controller : MonoBehaviour
             }
         */
     }
+
+
+	void GorillaMode()
+	{
+		AR.enabled = false;
+		var temp = Resources.Load<Sprite> ("Gorilla_Max");
+		GetComponent<SpriteRenderer> ().sprite = temp;
+		rb.gravityScale = .75F;
+		StartCoroutine ("Powerup_Timer", 10F);
+	}
+
+	IEnumerator Powerup_Timer(float time)
+	{
+		yield return new WaitForSeconds (time);
+		AR.enabled = true;
+		rb.gravityScale = 2.5F;
+	}
 }
 
