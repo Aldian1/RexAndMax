@@ -91,9 +91,6 @@ public class Player_Controller : MonoBehaviour
         {
             if (col.transform.tag == "Spikes")
             {
-                rb.AddForce(new Vector2(-1, 1) * 600);
-                invincible = true;
-                StartCoroutine("Invincible");
                 UpdateHealth(.2F);
             }
         }
@@ -170,14 +167,22 @@ public class Player_Controller : MonoBehaviour
 
     public void UpdateHealth(float damage)
     {
-        if (isrex)
-        {
-            GameObject.Find("Health_Rex").GetComponent<HealthListener>().updatehealth(damage);
-        }
-        else
-        {
+   
+ 
             GameObject.Find("Health_Max").GetComponent<HealthListener>().updatehealth(damage);
+        if(transform.rotation.y == 180)
+        {
+            rb.AddForce(new Vector2(1, 1) * 600);
         }
+        if (transform.rotation.y == 0)
+            {
+            rb.AddForce(new Vector2(-1, 1) * 600);
+        }
+            
+            invincible = true;
+            StartCoroutine("Invincible");
+        return;
+        
     }
 
     public void Controls()
@@ -250,7 +255,7 @@ public class Player_Controller : MonoBehaviour
 		AR.enabled = false;
 		var temp = Resources.Load<Sprite> ("Gorilla_Max");
 		GetComponent<SpriteRenderer> ().sprite = temp;
-		rb.gravityScale = .75F;
+		rb.gravityScale = 1F;
 		StartCoroutine ("Powerup_Timer", 10F);
 	}
 

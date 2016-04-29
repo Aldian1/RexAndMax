@@ -64,17 +64,29 @@ public class Enemy : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D col)
     {
+        Collider2D collider = col.collider;
 
-
-        if (col.gameObject.tag == "Player" || col.gameObject.tag == "Rex")
+        if (col.gameObject.tag == "Player")
         {
-            col.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 800);
-         
-            Effect(smokecloud);
-           
-           
-          
 
+            Vector3 contactPoint = col.contacts[0].point;
+            //   bool left = contactPoint.x < center.x;
+            float x = contactPoint.x -= transform.position.x;
+          //  Debug.Log(x);
+            if (x < -1F || x > 1F)
+            {
+
+                //if we land on top
+                col.gameObject.GetComponent<Player_Controller>().UpdateHealth(.2F);
+
+            }
+            else
+            {
+                //if we land on bottom
+                col.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 800);
+
+                Effect(smokecloud);
+            }
         }
     }
 
