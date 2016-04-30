@@ -20,12 +20,12 @@ public class FollowerScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Vector2.Distance (transform.position, target.position) < 8) {
+
 			transform.position = Vector2.SmoothDamp (transform.position, target.position, ref velocity, Time.deltaTime * smoothtime);
 			transform.rotation = target.rotation;
             this.GetComponent<Animator>().SetBool("running", false);
 
-        }
+        
 
 	}
 }

@@ -20,7 +20,7 @@ public class Player_Controller : MonoBehaviour
 
     public GameObject camera_;
 
-    private bool isrex;
+    
 
     public Transform rexfireball;
 
@@ -51,10 +51,7 @@ public class Player_Controller : MonoBehaviour
         AR = GetComponent<Animator>();
         Physics2D.IgnoreCollision(othercharacter.GetComponent<Collider2D>(), this.GetComponent<Collider2D>());
 
-        if (this.gameObject.tag == "Rex")
-        {
-            isrex = true;
-        }
+        
     }
 
     // Update is called once per frame
@@ -168,23 +165,21 @@ public class Player_Controller : MonoBehaviour
     public void UpdateHealth(float damage)
     {
    
- 
-            GameObject.Find("Health_Max").GetComponent<HealthListener>().updatehealth(damage);
-        if(transform.rotation.y == 180)
-        {
-            rb.AddForce(new Vector2(1, 1) * 600);
-        }
-        if (transform.rotation.y == 0)
-            {
-            rb.AddForce(new Vector2(-1, 1) * 600);
-        }
+		if (!invincible) {
+			GameObject.Find ("Health_Max").GetComponent<HealthListener> ().updatehealth (damage);
+			if (transform.rotation.y == 180) {
+				rb.AddForce (new Vector2 (1, 1) * 600);
+			}
+			if (transform.rotation.y == 0) {
+				rb.AddForce (new Vector2 (-1, 1) * 600);
+			}
             
-            invincible = true;
-            StartCoroutine("Invincible");
-        return;
-        
+			invincible = true;
+			StartCoroutine ("Invincible");
+			return;
+		}
     }
-
+	#region movement
     public void Controls()
     {
         //setting the wait thing, atm this is just a hack way
@@ -236,19 +231,10 @@ public class Player_Controller : MonoBehaviour
                 transform.Translate(-transform.right * speed * Time.deltaTime);
             }
 
-            /*
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                AR.enabled = true;
-                othercharacter.GetComponent<FollowerScript>().enabled = false;
-                othercharacter.GetComponent<Player_Controller>().enabled = true;
-                this.GetComponent<FollowerScript>().enabled = true;
-                this.GetComponent<Player_Controller>().enabled = false;
-                camera_.GetComponent<Camera2DFollow>().target = othercharacter.transform;
-            }
-        */
+          
     }
 
+	#endregion
 
 	void GorillaMode()
 	{
@@ -266,4 +252,9 @@ public class Player_Controller : MonoBehaviour
 		rb.gravityScale = 2.5F;
 	}
 }
+
+//if hannah is great then hannah is fab 
+	//yes
+
+
 

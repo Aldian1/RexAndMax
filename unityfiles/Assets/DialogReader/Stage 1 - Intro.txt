@@ -1,0 +1,28 @@
+max
+0
+1
+Hey Rex, why did the dinosaur cross the road?
+rex
+3
+2
+.....
+max
+3
+0
+Because chickens hadnt evolved yet!
+rex
+1
+1
+!!!!!!!!!
+max
+4
+0
+I thought it was funny.....
+rex
+3
+0
+..........
+max
+3
+0
+What was that!?

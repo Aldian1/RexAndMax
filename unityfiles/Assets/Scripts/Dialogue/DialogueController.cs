@@ -36,8 +36,24 @@ public class DialogueController : MonoBehaviour {
 
 	public AudioClip[] audioclip;
 	public AudioSource ad;
+
+
+	public bool HasEvent;
+	public int Event_Block;
+
+	private int eventblocker;
+
+	public enum EventType
+	{
+		ScreenShake = 0,
+		LoadLevel = 1,
+
+	};
+
+	public EventType Event_Type;
 	// Use this for initialization
 	void Start () {
+		eventblocker = Event_Block * 4;
 		ad = GetComponent<AudioSource> ();
 		//get the file and open it
 		info = new FileInfo(filepath);
@@ -120,27 +136,30 @@ public class DialogueController : MonoBehaviour {
 
 	void nexttext()
 	{
+		if (eventblocker != nextblock) {
+
+			//from the list it takes the lines 1 - 4 and adds them to the specific single strings. 
+			if (nextblock != splitext.Count) {
+
+				textobject.text = "";
+				portrait = splitext [nextblock];
+				nextblock += 1;
+				emotion = splitext [nextblock];
+				nextblock += 1;
+				animation_ = splitext [nextblock];
+				nextblock += 1;
+				dialogue = splitext [nextblock];
+				nextblock += 1;
+
+				PortraitSetter ();
 
 
-		//from the list it takes the lines 1 - 4 and adds them to the specific single strings. 
-		if (nextblock != splitext.Count) {
-
-			textobject.text = "";
-			portrait = splitext [nextblock];
-			nextblock += 1;
-			emotion = splitext [nextblock];
-			nextblock += 1;
-			animation_ = splitext [nextblock];
-			nextblock += 1;
-			dialogue = splitext [nextblock];
-			nextblock += 1;
-
-			PortraitSetter ();
-
-
+			} else {
+				Debug.Log ("Reached end of file");
+				StartCoroutine ("fadeout");
+			}
 		} else {
-			Debug.Log ("Reached end of file");
-			StartCoroutine ("fadeout");
+			Event ();
 		}
 	}
 
@@ -214,5 +233,14 @@ public class DialogueController : MonoBehaviour {
 	{
 		StartCoroutine("fadein");
 		buttonclick ();
+	}
+
+	public void Event()
+	{
+
+		if (Event_Type == EventType.ScreenShake) {
+			Camera.main.GetComponent<Animation> ().Play ();
+			eventblocker = 0;
+		}
 	}
 }
