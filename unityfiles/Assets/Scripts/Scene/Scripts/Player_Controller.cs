@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityStandardAssets.Utility;
 using UnityStandardAssets._2D;
+using Spriter2UnityDX;
 
 public class Player_Controller : MonoBehaviour
 {
@@ -19,15 +20,6 @@ public class Player_Controller : MonoBehaviour
     public float Jumpower;
 
     public GameObject camera_;
-
-    
-
-    public Transform rexfireball;
-
-    public GameObject fireball;
-
-    public List<GameObject> fireballs = new List<GameObject>();
-
     public bool onground;
 
     private GameObject debugger;
@@ -41,12 +33,14 @@ public class Player_Controller : MonoBehaviour
 
     public Sprite[] RexAttacks;
 
+    public GameObject gorilla;
+
 
     // Use this for initialization
     void Start()
     {
 
-        sprite = GetComponent<SpriteRenderer>().color;
+        sprite = GetComponent<EntityRenderer>().Color;
         rb = GetComponent<Rigidbody2D>();
         AR = GetComponent<Animator>();
         Physics2D.IgnoreCollision(othercharacter.GetComponent<Collider2D>(), this.GetComponent<Collider2D>());
@@ -60,7 +54,7 @@ public class Player_Controller : MonoBehaviour
 
 
         Controls();
-
+        Animation();
 
         if (onground == true)
         {
@@ -113,10 +107,10 @@ public class Player_Controller : MonoBehaviour
     IEnumerator Invincible()
     {
         sprite.a = .5F;
-        GetComponent<SpriteRenderer>().color = sprite;
+        GetComponent<EntityRenderer>().Color = sprite;
         yield return new WaitForSeconds(3);
         sprite.a = 1F;
-        GetComponent<SpriteRenderer>().color = sprite;
+        GetComponent<EntityRenderer>().Color = sprite;
         invincible = false;
         StopCoroutine("Invincible");
 
@@ -203,54 +197,61 @@ public class Player_Controller : MonoBehaviour
             rb.gravityScale = 2.5F;
         }
 
-            if (Input.GetKey(KeyCode.D))
-            {
-                AR.SetBool("running", true);
-            }
-
-            if (Input.GetKey(KeyCode.A))
-            {
-                AR.SetBool("running", true);
-            }
 
 
             if (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
             {
-                AR.SetBool("running", false);
+                
             }
 
             if (Input.GetKey(KeyCode.D))
             {
                 transform.Translate(transform.right * speed * Time.deltaTime);
-                transform.rotation = Quaternion.Euler(0, 0, 0);
+            //spriter works off scaling so we are changing from rotations to negative scale.
+            transform.localScale = new Vector3(.35F,.35F,1);    
+
+
+                //transform.rotation = Quaternion.Euler(0, 0, 0);
             }
 
             if (Input.GetKey(KeyCode.A))
             {
-                transform.rotation = Quaternion.Euler(0, 180, 0);
-                transform.Translate(-transform.right * speed * Time.deltaTime);
+            //transform.rotation = Quaternion.Euler(0, 180, 0);
+            transform.localScale = new Vector3(-.35F, .35F, 1);
+            transform.Translate(-transform.right * speed * Time.deltaTime);
             }
 
           
     }
+    public void Animation()
+    {
 
+        float run = Input.GetAxis("Horizontal");
+        AR.SetFloat("Run", run);
+
+    }
 	#endregion
 
 	void GorillaMode()
 	{
-		AR.enabled = false;
-		var temp = Resources.Load<Sprite> ("Gorilla_Max");
-		GetComponent<SpriteRenderer> ().sprite = temp;
-		rb.gravityScale = 1F;
-		StartCoroutine ("Powerup_Timer", 10F);
+		
+        //	var temp = Resources.Load<Sprite> ("Gorilla_Max");
+        //	GetComponent<EntityRenderer>().sprite = temp as Spriute;
+        gorilla.SetActive(true);
+        gorilla.transform.position = this.transform.position;
+        Camera.main.GetComponent<Camera2DFollow>().target = gorilla.transform;
+        this.gameObject.SetActive(false);
+        othercharacter.SetActive(false);
+
+        rb.gravityScale = 1F;
+        gorilla.GetComponent<GorillaController>().StartCoroutine("Timer");
 	}
 
-	IEnumerator Powerup_Timer(float time)
-	{
-		yield return new WaitForSeconds (time);
-		AR.enabled = true;
-		rb.gravityScale = 2.5F;
-	}
+    public void CollisionAgain()
+    {
+        Physics2D.IgnoreCollision(othercharacter.GetComponent<Collider2D>(), this.GetComponent<Collider2D>());
+    }
+
 }
 
 //if hannah is great then hannah is fab 

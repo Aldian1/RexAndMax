@@ -22,8 +22,16 @@ public class FollowerScript : MonoBehaviour {
 
 
 			transform.position = Vector2.SmoothDamp (transform.position, target.position, ref velocity, Time.deltaTime * smoothtime);
-			transform.rotation = target.rotation;
-            this.GetComponent<Animator>().SetBool("running", false);
+		if(target.parent.localScale.x == 0.35F)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+
+          
 
         
 

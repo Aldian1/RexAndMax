@@ -28,7 +28,7 @@ public class DialogueController : MonoBehaviour {
 
 	public string filepath;
 
-	public Sprite[] MaxEmotions,RexEmotions;
+	public Sprite[] MaxEmotions,RexEmotions,alienemotions;
 
 	public CanvasGroup fadecanvas;
 
@@ -43,6 +43,7 @@ public class DialogueController : MonoBehaviour {
 
 	private int eventblocker;
 
+    public bool lockcharacter;
 	public enum EventType
 	{
 		ScreenShake = 0,
@@ -174,18 +175,35 @@ public class DialogueController : MonoBehaviour {
 		if (portrait == "max") {
 			Debug.Log ("Change Max");
 			PortraitObject.sprite = MaxEmotions [i];
-			ad.clip = audioclip [0];
+            PortraitObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -7.5F);
+            ad.clip = audioclip [0];
 			ad.Play ();
 		}
 
 		if (portrait == "rex") {
 			PortraitObject.sprite = RexEmotions [i];
 			Debug.Log ("Change Rex");
-			ad.clip = audioclip [1];
-			ad.Play ();
+            PortraitObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(1161, 0);
+            if (PortraitObject.sprite == RexEmotions[5])
+            {
+                ad.clip = audioclip[2];
+                ad.Play();
+            }
+            else
+            {
+                ad.clip = audioclip[1];
+                ad.Play();
+            }
+
 		}
 
-
+        if(portrait == "alien")
+        {
+            PortraitObject.sprite = alienemotions[i];
+            ad.clip = audioclip[0];
+            ad.Play();
+            PortraitObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(0,0);
+        }
 	}
 
 	public IEnumerator fadeout()
@@ -225,9 +243,12 @@ public class DialogueController : MonoBehaviour {
 
 	void LockCharacter()
 	{
-		player.SetActive (false);
-		rex.SetActive (false);
-	}
+        if (lockcharacter)
+        {
+            player.SetActive(false);
+            rex.SetActive(false);
+        }
+        }
 
 	public void FirstRun()
 	{
