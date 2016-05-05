@@ -35,6 +35,8 @@ public class Player_Controller : MonoBehaviour
 
     public GameObject gorilla;
 
+    float direction;
+
 
     // Use this for initialization
     void Start()
@@ -54,19 +56,9 @@ public class Player_Controller : MonoBehaviour
 
 
         Controls();
-        Animation();
+     
 
-        if (onground == true)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                //Debug.Log ("jump");
-                onground = false;
-                rb.AddForce(Vector2.up * Jumpower);
-                Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.red);
-                return;
-            }
-        }
+       
         if (onground == false)
         {
             Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.green);
@@ -139,20 +131,21 @@ public class Player_Controller : MonoBehaviour
     //Debugger to change controls
     public void ToggleButton(bool active)
     {
-        if (active == true)
+        if (onground == true)
         {
-            keyboardcontrols = true;
-        }
-        if (active == false)
-        {
-            keyboardcontrols = false;
+            if (Input.GetKeyDown(KeyCode.Space) || active == true)
+            {
+                //Debug.Log ("jump");
+                onground = false;
+                rb.AddForce(Vector2.up * Jumpower);
+                Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.red);
+                active = false;
+                return;
+            }
         }
     }
 
-    public void SliderStick(float value)
-    {
 
-    }
 
 
 
@@ -176,20 +169,7 @@ public class Player_Controller : MonoBehaviour
 	#region movement
     public void Controls()
     {
-        //setting the wait thing, atm this is just a hack way
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            if (othercharacter.GetComponent<FollowerScript>().enabled == false)
-            {
-                othercharacter.GetComponent<FollowerScript>().enabled = true;
-            }
-            else
-            {
-                othercharacter.GetComponent<FollowerScript>().enabled = false;
-            }
-
-
-        }
+       
 
         if (Input.GetKeyDown(KeyCode.Mouse1) && balloon.activeSelf == true)
         {
@@ -197,16 +177,9 @@ public class Player_Controller : MonoBehaviour
             rb.gravityScale = 2.5F;
         }
 
-
-
-            if (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
+            if (Input.GetKey(KeyCode.D) || direction > 0)
             {
-                
-            }
-
-            if (Input.GetKey(KeyCode.D))
-            {
-                transform.Translate(transform.right * speed * Time.deltaTime);
+                transform.Translate(transform.right * speed * direction * Time.deltaTime);
             //spriter works off scaling so we are changing from rotations to negative scale.
             transform.localScale = new Vector3(.35F,.35F,1);    
 
@@ -214,25 +187,36 @@ public class Player_Controller : MonoBehaviour
                 //transform.rotation = Quaternion.Euler(0, 0, 0);
             }
 
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetKey(KeyCode.A) || direction < 0)
             {
             //transform.rotation = Quaternion.Euler(0, 180, 0);
             transform.localScale = new Vector3(-.35F, .35F, 1);
-            transform.Translate(-transform.right * speed * Time.deltaTime);
+            transform.Translate(transform.right * speed * direction * Time.deltaTime);
             }
 
           
     }
-    public void Animation()
+    public void Animation(float slidervalue)
     {
 
-        float run = Input.GetAxis("Horizontal");
-        AR.SetFloat("Run", run);
+        direction = slidervalue;
+        AR.SetFloat("Run", slidervalue);
 
     }
-	#endregion
 
-	void GorillaMode()
+    public void SliderStick(GameObject objectcalling)
+    {
+       float Slider_ = objectcalling.GetComponent<Slider>().value;
+        if(Slider_ > 0 || Slider_ < 0)
+        {
+            objectcalling.GetComponent<Slider>().value = 0;
+        }
+       
+      
+    }
+    #endregion
+
+    void GorillaMode()
 	{
 		
         //	var temp = Resources.Load<Sprite> ("Gorilla_Max");
