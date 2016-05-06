@@ -29,7 +29,7 @@ public class Player_Controller : MonoBehaviour
 
     private Color sprite;
 
-    private bool keyboardcontrols;
+    public  bool keyboardcontrols;
 
     public Sprite[] RexAttacks;
 
@@ -169,7 +169,12 @@ public class Player_Controller : MonoBehaviour
 	#region movement
     public void Controls()
     {
-       
+        if (keyboardcontrols == true)
+        {
+            float i = Input.GetAxis("Horizontal");
+            direction = i;
+            AR.SetFloat("Run", i);
+        }
 
         if (Input.GetKeyDown(KeyCode.Mouse1) && balloon.activeSelf == true)
         {
@@ -198,20 +203,24 @@ public class Player_Controller : MonoBehaviour
     }
     public void Animation(float slidervalue)
     {
-
-        direction = slidervalue;
-        AR.SetFloat("Run", slidervalue);
-
+        if (keyboardcontrols == false)
+        {
+            direction = slidervalue;
+            AR.SetFloat("Run", direction);
+        }
     }
 
     public void SliderStick(GameObject objectcalling)
     {
-       float Slider_ = objectcalling.GetComponent<Slider>().value;
-        if(Slider_ > 0 || Slider_ < 0)
+        if (keyboardcontrols == false)
         {
-            objectcalling.GetComponent<Slider>().value = 0;
+
+            float Slider_ = objectcalling.GetComponent<Slider>().value;
+            if (Slider_ > 0 || Slider_ < 0)
+            {
+                objectcalling.GetComponent<Slider>().value = 0;
+            }
         }
-       
       
     }
     #endregion

@@ -13,17 +13,28 @@ public class FollowerScript : MonoBehaviour {
 
     public Animator ar;
 
+    private bool follow;
+
+    private bool KB;
+
 	// Use this for initialization
 	void Start () {
 		thistransform = transform;
 
         ar = GetComponent<Animator>();
+        if(target.parent.GetComponent<Player_Controller>().keyboardcontrols == true)
+        {
+            KB = true;
+        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-
+        if(KB)
+        {
+            ar.SetFloat("Blend", Input.GetAxis("Horizontal"));
+        }
 			transform.position = Vector2.SmoothDamp (transform.position, target.position, ref velocity, Time.deltaTime * smoothtime);
 		if(target.parent.localScale.x == 0.35F)
         {

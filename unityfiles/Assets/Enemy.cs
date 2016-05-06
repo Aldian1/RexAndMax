@@ -73,7 +73,7 @@ public class Enemy : MonoBehaviour {
             //   bool left = contactPoint.x < center.x;
             float x = contactPoint.x -= transform.position.x;
           //  Debug.Log(x);
-            if (x < -1.3F || x > 1.3F)
+            if (x < -1.7F || x > 1.7F)
             {
 
                 //if we land on top
