@@ -22,15 +22,11 @@ public class LevelController : MonoBehaviour {
 
 	public AudioSource ad;
 
-	public GameObject pauseelements,overlay;
-
 	// Use this for initialization
 	void Start () {
 		max = GameObject.FindGameObjectWithTag ("Player");
 		rex = GameObject.FindGameObjectWithTag ("Rex");
 		ad = GetComponent<AudioSource> ();
-		overlay = GameObject.Find ("Overlay");
-		pauseelements = GameObject.FindGameObjectWithTag("PauseScreen");
 	}
 
 	public void GO()
@@ -63,32 +59,5 @@ public class LevelController : MonoBehaviour {
 		ad.volume = 0.5F;
 	}
 
-	public void PauseScreen(bool stage)
-	{
-		if (stage == true) {
-			Time.timeScale = 0;
-			pauseelements.SetActive (true);
-			overlay.SetActive (false);
-		}
-		if (stage == false) {
-			Time.timeScale = 1;
-			overlay.SetActive (true);
-			pauseelements.SetActive (false);
-		}
-	}
-
-	public void Restart()
-	{
-		int scene = SceneManager.GetActiveScene().buildIndex;
-		SceneManager.LoadScene(scene, LoadSceneMode.Single);
-		Time.timeScale = 1;
-		overlay.SetActive (true);
-		pauseelements.SetActive (false);
-		
-	}
-
-	public void Quit()
-	{
-		Application.Quit ();
-	}
+    
 }

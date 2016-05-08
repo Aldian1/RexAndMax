@@ -59,7 +59,7 @@ public class DialogueController : MonoBehaviour {
 		//get the file and open it
 		info = new FileInfo(filepath);
 
-		reader = info.OpenText();
+		reader = info.OpenText ();
 
 		fadecanvas = this.GetComponent<CanvasGroup> ();
 		fadecanvas.alpha = 0;
