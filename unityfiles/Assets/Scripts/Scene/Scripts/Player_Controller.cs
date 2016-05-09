@@ -45,8 +45,13 @@ public class Player_Controller : MonoBehaviour
         sprite = GetComponent<EntityRenderer>().Color;
         rb = GetComponent<Rigidbody2D>();
         AR = GetComponent<Animator>();
-        Physics2D.IgnoreCollision(othercharacter.GetComponent<Collider2D>(), this.GetComponent<Collider2D>());
 
+
+        othercharacter = GameObject.Find("Rex");
+        if (othercharacter != null)
+        {
+            Physics2D.IgnoreCollision(othercharacter.GetComponent<Collider2D>(), this.GetComponent<Collider2D>());
+        }
         
     }
 
