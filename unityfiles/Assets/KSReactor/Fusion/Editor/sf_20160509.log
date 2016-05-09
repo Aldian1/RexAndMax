@@ -85,3 +85,134 @@
 2016-05-09 18:34:22.4059 [DEBUG] Scene Fusion version 0.7.4
 2016-05-09 18:34:31.5133 [DEBUG] Scene Fusion version 0.7.4
 2016-05-09 18:59:48.3846 [DEBUG] Scene Fusion version 0.7.4
+2016-05-09 19:04:53.3043 [DEBUG] Scene Fusion version 0.7.4
+2016-05-09 19:07:11.0672 [DEBUG] Scene Fusion version 0.7.4
+2016-05-09 19:08:07.4415 [DEBUG] Scene Fusion version 0.7.4
+2016-05-09 19:16:14.5333 [DEBUG] Scene Fusion version 0.7.4
+2016-05-09 19:16:59.4976 [DEBUG] Scene Fusion version 0.7.4
+2016-05-09 19:18:01.5729 [DEBUG] Scene Fusion version 0.7.4
+2016-05-09 19:36:03.1852 [DEBUG] Login. (Email: harryroper@icloud.co.uk)
+2016-05-09 19:36:08.4074 [DEBUG] Login. (Email: harryroper@icloud.co.uk)
+2016-05-09 19:36:12.2414 [DEBUG] Login. (Email: harryroper@icloud.co.uk)
+2016-05-09 19:36:18.3360 [DEBUG] Login. (Email: harryroper@icloud.co.uk)
+2016-05-09 19:36:22.4106 [DEBUG] Login. (Email: harryroper@icloud.co.uk)
+2016-05-09 19:36:27.6560 [DEBUG] Login. (Email: harryroper@icloud.co.uk)
+2016-05-09 19:36:53.3034 [DEBUG] Login. (Email: harryroper@icloud.co.uk)
+2016-05-09 19:37:32.7546 [DEBUG] Login. (Email: harryroper@icloud.com)
+2016-05-09 19:37:35.5774 [DEBUG] Login. (Email: harryroper@icloud.com)
+2016-05-09 19:37:36.2261 [DEBUG] Login complete.
+2016-05-09 19:37:43.0271 [DEBUG] Host connection. (Session: 1613)
+2016-05-09 19:37:43.0371 [DEBUG] Connecting to room (1613:MR_1_1:Beta0.7.4Room) via TCP at staging2.scenefusion.com:1025
+2016-05-09 19:37:44.3282 [DEBUG] Authenticating with server...
+2016-05-09 19:37:44.5714 [DEBUG] Connected to room. (1613:MR_1_1:Beta0.7.4Room)
+2016-05-09 19:37:44.5754 [INFO] Connected to server.
+2016-05-09 19:37:45.0277 [DEBUG] Uploading scene 'MR_1_1'
+2016-05-09 19:43:20.9032 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:43:27.4326 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:44:06.7703 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:45:15.9046 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:45:19.2821 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:45:21.2286 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:45:27.5070 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:45:33.4408 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:45:35.0348 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:45:38.7956 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:46:09.4219 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:46:39.3130 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:47:21.9628 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:47:39.3934 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:47:47.9537 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:48:00.0910 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:48:05.7860 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:48:10.5698 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:48:12.8832 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:48:19.0755 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:48:24.0671 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:48:25.9234 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:48:28.6194 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:48:30.2019 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:48:49.2850 [DEBUG] Spawn request. (Objects: 2)
+2016-05-09 19:48:56.1864 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:49:08.8888 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:49:18.5042 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:49:25.3567 [DEBUG] Spawn request. (Objects: 4)
+2016-05-09 19:49:28.3084 [DEBUG] Spawn request. (Objects: 4)
+2016-05-09 19:49:32.7761 [DEBUG] Spawn request. (Objects: 8)
+2016-05-09 19:49:51.7141 [DEBUG] Spawn request. (Objects: 2)
+2016-05-09 19:50:01.5128 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:50:17.9315 [DEBUG] Spawn request. (Objects: 2)
+2016-05-09 19:50:20.2970 [DEBUG] Spawn request. (Objects: 2)
+2016-05-09 19:50:28.1603 [DEBUG] Spawn request. (Objects: 2)
+2016-05-09 19:50:50.9337 [DEBUG] Spawn request. (Objects: 2)
+2016-05-09 19:51:32.6869 [DEBUG] Spawn request. (Objects: 4)
+2016-05-09 19:51:39.0179 [DEBUG] Spawn request. (Objects: 2)
+2016-05-09 19:51:48.0796 [DEBUG] Spawn request. (Objects: 4)
+2016-05-09 19:52:36.3501 [DEBUG] Spawn request. (Objects: 12)
+2016-05-09 19:53:42.3217 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 19:53:52.9998 [DEBUG] Spawn request. (Objects: 4)
+2016-05-09 19:53:57.7058 [ERROR] Disconnected: TIMEOUT
+2016-05-09 19:53:57.7098 [DEBUG] Disconnect. (Duration: 973)
+2016-05-09 19:54:27.4418 [DEBUG] Guest connection. (Session: 1613)
+2016-05-09 19:54:27.4418 [DEBUG] Connecting to room (1613:MR_1_1:Beta0.7.4Room) via TCP at staging2.scenefusion.com:1025
+2016-05-09 19:54:27.6240 [DEBUG] Authenticating with server...
+2016-05-09 19:54:27.7943 [DEBUG] Authentication with the remote host failed. (1613:MR_1_1:Beta0.7.4Room)
+2016-05-09 19:54:27.8013 [DEBUG] Failed to authenticate: Connection refused because this user is already connected to the session.
+2016-05-09 19:54:28.8901 [DEBUG] Connection Failed. (1613:MR_1_1:Beta0.7.4Room)
+2016-05-09 19:54:35.9128 [DEBUG] Host connection. (Session: 1614)
+2016-05-09 19:54:35.9128 [DEBUG] Connecting to room (1614:MR_1_1:Beta0.7.4Room) via TCP at staging2.scenefusion.com:1025
+2016-05-09 19:54:36.7322 [DEBUG] Authenticating with server...
+2016-05-09 19:54:36.9737 [DEBUG] Connected to room. (1614:MR_1_1:Beta0.7.4Room)
+2016-05-09 19:54:36.9747 [INFO] Connected to server.
+2016-05-09 19:54:37.3724 [DEBUG] Uploading scene 'MR_1_1'
+2016-05-09 19:54:37.4064 [DEBUG] Spawn request. (Objects: 78)
+2016-05-09 19:56:01.6728 [DEBUG] Spawn request. (Objects: 6)
+2016-05-09 19:57:50.3304 [DEBUG] Spawn request. (Objects: 4)
+2016-05-09 19:57:53.2138 [DEBUG] Spawn request. (Objects: 4)
+2016-05-09 19:57:55.5042 [DEBUG] Spawn request. (Objects: 4)
+2016-05-09 19:57:59.9048 [DEBUG] Spawn request. (Objects: 10)
+2016-05-09 19:58:33.7704 [ERROR] Disconnected: TIMEOUT
+2016-05-09 19:58:33.7745 [DEBUG] Disconnect. (Duration: 236)
+2016-05-09 19:58:43.2015 [DEBUG] Host connection. (Session: 1615)
+2016-05-09 19:58:43.2015 [DEBUG] Connecting to room (1615:MR_1_1:Beta0.7.4Room) via TCP at staging2.scenefusion.com:1025
+2016-05-09 19:58:44.0819 [DEBUG] Authenticating with server...
+2016-05-09 19:58:44.3481 [DEBUG] Connected to room. (1615:MR_1_1:Beta0.7.4Room)
+2016-05-09 19:58:44.3541 [INFO] Connected to server.
+2016-05-09 19:58:44.7394 [DEBUG] Uploading scene 'MR_1_1'
+2016-05-09 19:58:44.8254 [DEBUG] Spawn request. (Objects: 227)
+2016-05-09 19:59:01.5795 [DEBUG] Spawn request. (Objects: 2)
+2016-05-09 19:59:30.1768 [DEBUG] Spawn request. (Objects: 6)
+2016-05-09 19:59:36.6317 [DEBUG] Spawn request. (Objects: 6)
+2016-05-09 20:00:32.9895 [DEBUG] Spawn request. (Objects: 12)
+2016-05-09 20:00:42.9435 [DEBUG] Spawn request. (Objects: 12)
+2016-05-09 20:00:45.3162 [DEBUG] Spawn request. (Objects: 12)
+2016-05-09 20:03:46.5717 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 20:05:27.7473 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 20:08:44.9978 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 20:09:02.2273 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 20:09:06.2358 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 20:11:34.0263 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 20:13:04.3306 [DEBUG] Spawn request. (Objects: 1)
+2016-05-09 20:13:41.1569 [DEBUG] Spawn request. (Objects: 2)
+2016-05-09 20:13:45.2899 [DEBUG] Spawn request. (Objects: 2)
+2016-05-09 20:19:27.7669 [ERROR] Disconnected: TIMEOUT
+2016-05-09 20:19:27.7699 [DEBUG] Disconnect. (Duration: 1243)
+2016-05-09 20:52:28.4721 [DEBUG] Host connection. (Session: 1616)
+2016-05-09 20:52:28.4721 [DEBUG] Connecting to room (1616:MR_1_1:Beta0.7.4Room) via TCP at staging2.scenefusion.com:1025
+2016-05-09 20:52:29.4663 [DEBUG] Authenticating with server...
+2016-05-09 20:52:29.7556 [DEBUG] Connected to room. (1616:MR_1_1:Beta0.7.4Room)
+2016-05-09 20:52:29.7596 [INFO] Connected to server.
+2016-05-09 20:52:30.1648 [DEBUG] Uploading scene 'MR_1_1'
+2016-05-09 20:52:30.3418 [DEBUG] Spawn request. (Objects: 386)
+2016-05-09 20:56:56.7841 [DEBUG] Disconnecting from room (1616:MR_1_1:Beta0.7.4Room)
+2016-05-09 20:56:56.7841 [INFO] Disconnected from server.
+2016-05-09 20:56:56.7881 [DEBUG] Disconnect. (Duration: 266)
+2016-05-09 20:57:09.6010 [DEBUG] Host connection. (Session: 1617)
+2016-05-09 20:57:09.6010 [DEBUG] Connecting to room (1617:Recover:Beta0.7.4Room) via TCP at staging2.scenefusion.com:1025
+2016-05-09 20:57:09.7861 [DEBUG] Authenticating with server...
+2016-05-09 20:57:10.1082 [DEBUG] Connected to room. (1617:Recover:Beta0.7.4Room)
+2016-05-09 20:57:10.1152 [INFO] Connected to server.
+2016-05-09 20:57:10.5433 [DEBUG] Uploading scene 'Recover'
+2016-05-09 20:57:10.7673 [DEBUG] Spawn request. (Objects: 538)
+2016-05-09 20:58:05.6010 [DEBUG] Disconnecting from room (1617:Recover:Beta0.7.4Room)
+2016-05-09 20:58:05.6020 [INFO] Disconnected from server.
+2016-05-09 20:58:05.6050 [DEBUG] Disconnect. (Duration: 55)
