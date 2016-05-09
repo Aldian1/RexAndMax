@@ -1,5 +1,6 @@
 {
     "WebAPI": "console.scenefusion.com:8000",
     "WebConsole": "https://console.scenefusion.com",
-    "SupportEmail": "support@kinematicsoup.com"
+    "SupportEmail": "support@kinematicsoup.com",
+    "Debug": true
 }
