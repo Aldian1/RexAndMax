@@ -4,147 +4,97 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityStandardAssets.Utility;
 using UnityStandardAssets._2D;
+using Spriter2UnityDX;
 
-public class Player_Controller : MonoBehaviour {
+public class Player_Controller : MonoBehaviour
+{
 
-	public Animator AR;
+    public Animator AR;
 
-	public float speed;
+    public float speed;
 
-	public GameObject othercharacter;
+    public GameObject othercharacter;
 
-	public Rigidbody2D rb;
+    public Rigidbody2D rb;
 
-	public float Jumpower;
+    public float Jumpower;
 
-	public GameObject camera_;
-
-	private bool isrex;
-
-	public Transform rexfireball;
-
-	public GameObject fireball;
-
-	public  List<GameObject> fireballs = new List<GameObject>() ;
-
+    public GameObject camera_;
     public bool onground;
 
     private GameObject debugger;
-    public GameObject rexballoon;
+    public GameObject balloon;
 
     public bool invincible;
 
     private Color sprite;
 
-    private bool keyboardcontrols;
-	// Use this for initialization
-	void Start () {
+    public  bool keyboardcontrols;
 
-        sprite = GetComponent<SpriteRenderer>().color;
-		rb = GetComponent<Rigidbody2D> ();
-		AR = GetComponent<Animator> ();
-		Physics2D.IgnoreCollision (othercharacter.GetComponent<Collider2D> (), this.GetComponent<Collider2D> ());
-		AR.SetBool ("Run", true);
-		if (this.gameObject.tag == "Rex") {
-			isrex = true;
-		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (keyboardcontrols == true)
-        {
-            if (isrex) {
-                if (fireballs.Count > 0) {
-                    if (fireballs[0] == null) {
-                        fireballs.Clear();
-                    }
-                }
-                if (fireballs.Count < 3) {
-                    if (Input.GetKeyDown(KeyCode.Mouse1)) {
-                        GameObject go = Instantiate(fireball, rexfireball.position, Quaternion.identity) as GameObject;
-                        fireballs.Add(go);
-                    }
-                }
-            }
+    public Sprite[] RexAttacks;
 
-            if (Input.GetKey(KeyCode.D)) {
-                AR.SetBool("Run", true);
-            }
+    public GameObject gorilla;
 
-            if (Input.GetKey(KeyCode.A)) {
-                AR.SetBool("Run", true);
-            }
+    float direction;
 
 
-            if (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A)) {
-                AR.SetBool("Run", false);
-            }
-
-            if (Input.GetKey(KeyCode.D)) {
-                transform.Translate(transform.right * speed * Time.deltaTime);
-                transform.rotation = Quaternion.Euler(0, 0, 0);
-            }
-
-            if (Input.GetKey(KeyCode.A)) {
-                transform.rotation = Quaternion.Euler(0, 180, 0);
-                transform.Translate(-transform.right * speed * Time.deltaTime);
-            }
-
-
-            if (Input.GetKeyDown(KeyCode.Mouse0)) {
-                othercharacter.GetComponent<FollowerScript>().enabled = false;
-                othercharacter.GetComponent<Player_Controller>().enabled = true;
-                this.GetComponent<FollowerScript>().enabled = true;
-                this.GetComponent<Player_Controller>().enabled = false;
-                camera_.GetComponent<Camera2DFollow>().target = othercharacter.transform;
-            }
-
-            if (onground == true)
-            {
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    //Debug.Log ("jump");
-                    onground = false;
-                    rb.AddForce(Vector2.up * Jumpower);
-                    Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.red);
-                    return;
-                }
-            }
-            if (onground == false)
-            {
-                Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.green);
-
-                //  Debug.Log(Vector2.Distance(hit_.transform.position, transform.position));
-
-            }
-        }
-	}
-    void OnCollisionEnter2D(Collision2D col)
+    // Use this for initialization
+    void Start()
     {
 
-        if(!invincible)
+        sprite = GetComponent<EntityRenderer>().Color;
+        rb = GetComponent<Rigidbody2D>();
+        AR = GetComponent<Animator>();
+
+
+        othercharacter = GameObject.Find("Rex");
+        if (othercharacter != null)
         {
-            if(col.transform.tag == "Spikes")
-            {
-                rb.AddForce(new Vector2(-1, 1) * 1200);
-                invincible = true;
-                StartCoroutine("Invincible");
-            }
+            Physics2D.IgnoreCollision(othercharacter.GetComponent<Collider2D>(), this.GetComponent<Collider2D>());
         }
         
-            if (col.transform.tag == "Ground")
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+
+        Controls();
+     
+
+       
+        if (onground == false)
         {
-            onground = true;
+            Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.green);
+
+            //  Debug.Log(Vector2.Distance(hit_.transform.position, transform.position));
+
         }
     }
 
-    void OnCollisionExit2D(Collision2D col)
+    void OnCollisionEnter2D(Collision2D col)
     {
-        if(onground == true)
+        if (!invincible)
+        {
+            if (col.transform.tag == "Spikes")
+            {
+                UpdateHealth(.2F);
+            }
+        }
+
         if (col.transform.tag == "Ground")
         {
-                
+            onground = true;
+        }
+
+    }
+    void OnCollisionExit2D(Collision2D col)
+    {
+        if (onground == true)
+            if (col.transform.tag == "Ground")
+            {
+
                 onground = false;
                 OnCollisionEnter2D(col);
                 return;
@@ -154,10 +104,10 @@ public class Player_Controller : MonoBehaviour {
     IEnumerator Invincible()
     {
         sprite.a = .5F;
-        GetComponent<SpriteRenderer>().color = sprite;
+        GetComponent<EntityRenderer>().Color = sprite;
         yield return new WaitForSeconds(3);
         sprite.a = 1F;
-        GetComponent<SpriteRenderer>().color = sprite;
+        GetComponent<EntityRenderer>().Color = sprite;
         invincible = false;
         StopCoroutine("Invincible");
 
@@ -166,29 +116,144 @@ public class Player_Controller : MonoBehaviour {
 
     public void GetItem(ItemDetection.Items item)
     {
-        if(item == ItemDetection.Items.BalloonPowerup)
+        if (item == ItemDetection.Items.BalloonPowerup)
         {
-            rexballoon.SetActive(true);
+            balloon.SetActive(true);
             rb.gravityScale = -.2F;
         }
+
+        if (item == ItemDetection.Items.Stars)
+        {
+            GameObject.Find("StarCounter").GetComponent<StarCounter>().AddStars(1);
+        }
+
+		if (item == ItemDetection.Items.GorillaMilk) {
+			GorillaMode ();
+		}
 
     }
 
     //Debugger to change controls
     public void ToggleButton(bool active)
     {
-        if (active == true)
+        if (onground == true)
         {
-            keyboardcontrols = true;
-        }
-        if(active == false)
-        {
-            keyboardcontrols = false;
+            if (Input.GetKeyDown(KeyCode.Space) || active == true)
+            {
+                //Debug.Log ("jump");
+                onground = false;
+                rb.AddForce(Vector2.up * Jumpower);
+                Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.red);
+                active = false;
+                return;
+            }
         }
     }
 
-    public void SliderStick(float value)
+
+
+
+
+    public void UpdateHealth(float damage)
     {
-        
+   
+		if (!invincible) {
+			GameObject.Find ("Health_Max").GetComponent<HealthListener> ().updatehealth (damage);
+			if (transform.rotation.y == 180) {
+				rb.AddForce (new Vector2 (1, 1) * 600);
+			}
+			if (transform.rotation.y == 0) {
+				rb.AddForce (new Vector2 (-1, 1) * 600);
+			}
+            
+			invincible = true;
+			StartCoroutine ("Invincible");
+			return;
+		}
     }
+	#region movement
+    public void Controls()
+    {
+        if (keyboardcontrols == true)
+        {
+            float i = Input.GetAxis("Horizontal");
+            direction = i;
+            AR.SetFloat("Run", i);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse1) && balloon.activeSelf == true)
+        {
+            balloon.SetActive(false);
+            rb.gravityScale = 2.5F;
+        }
+
+            if (Input.GetKey(KeyCode.D) || direction > 0)
+            {
+                transform.Translate(transform.right * speed * direction * Time.deltaTime);
+            //spriter works off scaling so we are changing from rotations to negative scale.
+            transform.localScale = new Vector3(.35F,.35F,1);    
+
+
+                //transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
+
+            if (Input.GetKey(KeyCode.A) || direction < 0)
+            {
+            //transform.rotation = Quaternion.Euler(0, 180, 0);
+            transform.localScale = new Vector3(-.35F, .35F, 1);
+            transform.Translate(transform.right * speed * direction * Time.deltaTime);
+            }
+
+          
+    }
+    public void Animation(float slidervalue)
+    {
+        if (keyboardcontrols == false)
+        {
+            direction = slidervalue;
+            AR.SetFloat("Run", direction);
+        }
+    }
+
+    public void SliderStick(GameObject objectcalling)
+    {
+        if (keyboardcontrols == false)
+        {
+
+            float Slider_ = objectcalling.GetComponent<Slider>().value;
+            if (Slider_ > 0 || Slider_ < 0)
+            {
+                objectcalling.GetComponent<Slider>().value = 0;
+            }
+        }
+      
+    }
+    #endregion
+
+    void GorillaMode()
+	{
+		
+        //	var temp = Resources.Load<Sprite> ("Gorilla_Max");
+        //	GetComponent<EntityRenderer>().sprite = temp as Spriute;
+        gorilla.SetActive(true);
+        gorilla.transform.position = this.transform.position;
+        Camera.main.GetComponent<Camera2DFollow>().target = gorilla.transform;
+        this.gameObject.SetActive(false);
+        othercharacter.SetActive(false);
+
+        rb.gravityScale = 1F;
+        gorilla.GetComponent<GorillaController>().StartCoroutine("Timer");
+	}
+
+    public void CollisionAgain()
+    {
+        Physics2D.IgnoreCollision(othercharacter.GetComponent<Collider2D>(), this.GetComponent<Collider2D>());
+    }
+
 }
+
+//if hannah is great then hannah is fab 
+	//yes
+
+
+

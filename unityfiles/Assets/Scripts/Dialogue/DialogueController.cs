@@ -28,7 +28,7 @@ public class DialogueController : MonoBehaviour {
 
 	public string filepath;
 
-	public Sprite[] MaxEmotions,RexEmotions;
+	public Sprite[] MaxEmotions,RexEmotions,alienemotions;
 
 	public CanvasGroup fadecanvas;
 
@@ -36,8 +36,25 @@ public class DialogueController : MonoBehaviour {
 
 	public AudioClip[] audioclip;
 	public AudioSource ad;
+
+
+	public bool HasEvent;
+	public int Event_Block;
+
+	private int eventblocker;
+
+    public bool lockcharacter;
+	public enum EventType
+	{
+		ScreenShake = 0,
+		LoadLevel = 1,
+
+	};
+
+	public EventType Event_Type;
 	// Use this for initialization
 	void Start () {
+		eventblocker = Event_Block * 4;
 		ad = GetComponent<AudioSource> ();
 		//get the file and open it
 		info = new FileInfo(filepath);
@@ -120,27 +137,30 @@ public class DialogueController : MonoBehaviour {
 
 	void nexttext()
 	{
+		if (eventblocker != nextblock) {
+
+			//from the list it takes the lines 1 - 4 and adds them to the specific single strings. 
+			if (nextblock != splitext.Count) {
+
+				textobject.text = "";
+				portrait = splitext [nextblock];
+				nextblock += 1;
+				emotion = splitext [nextblock];
+				nextblock += 1;
+				animation_ = splitext [nextblock];
+				nextblock += 1;
+				dialogue = splitext [nextblock];
+				nextblock += 1;
+
+				PortraitSetter ();
 
 
-		//from the list it takes the lines 1 - 4 and adds them to the specific single strings. 
-		if (nextblock != splitext.Count) {
-
-			textobject.text = "";
-			portrait = splitext [nextblock];
-			nextblock += 1;
-			emotion = splitext [nextblock];
-			nextblock += 1;
-			animation_ = splitext [nextblock];
-			nextblock += 1;
-			dialogue = splitext [nextblock];
-			nextblock += 1;
-
-			PortraitSetter ();
-
-
+			} else {
+				Debug.Log ("Reached end of file");
+				StartCoroutine ("fadeout");
+			}
 		} else {
-			Debug.Log ("Reached end of file");
-			StartCoroutine ("fadeout");
+			Event ();
 		}
 	}
 
@@ -155,18 +175,35 @@ public class DialogueController : MonoBehaviour {
 		if (portrait == "max") {
 			Debug.Log ("Change Max");
 			PortraitObject.sprite = MaxEmotions [i];
-			ad.clip = audioclip [0];
+            PortraitObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -7.5F);
+            ad.clip = audioclip [0];
 			ad.Play ();
 		}
 
 		if (portrait == "rex") {
 			PortraitObject.sprite = RexEmotions [i];
 			Debug.Log ("Change Rex");
-			ad.clip = audioclip [1];
-			ad.Play ();
+            PortraitObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(1161, 0);
+            if (PortraitObject.sprite == RexEmotions[5])
+            {
+                ad.clip = audioclip[2];
+                ad.Play();
+            }
+            else
+            {
+                ad.clip = audioclip[1];
+                ad.Play();
+            }
+
 		}
 
-
+        if(portrait == "alien")
+        {
+            PortraitObject.sprite = alienemotions[i];
+            ad.clip = audioclip[0];
+            ad.Play();
+            PortraitObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(0,0);
+        }
 	}
 
 	public IEnumerator fadeout()
@@ -206,13 +243,25 @@ public class DialogueController : MonoBehaviour {
 
 	void LockCharacter()
 	{
-		player.SetActive (false);
-		rex.SetActive (false);
-	}
+        if (lockcharacter)
+        {
+            player.SetActive(false);
+            rex.SetActive(false);
+        }
+        }
 
 	public void FirstRun()
 	{
 		StartCoroutine("fadein");
 		buttonclick ();
+	}
+
+	public void Event()
+	{
+
+		if (Event_Type == EventType.ScreenShake) {
+			Camera.main.GetComponent<Animation> ().Play ();
+			eventblocker = 0;
+		}
 	}
 }
