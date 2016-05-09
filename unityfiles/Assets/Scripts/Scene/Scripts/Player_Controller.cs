@@ -58,8 +58,18 @@ public class Player_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
+        if (keyboardcontrols)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                //Debug.Log ("jump");
+                onground = false;
+                rb.AddForce(Vector2.up * Jumpower);
+                Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.red);
+                
+                return;
+            }
+        }
         Controls();
      
 
