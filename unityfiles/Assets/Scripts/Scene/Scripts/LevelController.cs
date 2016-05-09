@@ -10,7 +10,7 @@ public class LevelController : MonoBehaviour {
 	public int deathcounter = 0;
 	public GameObject endoflevelMarker;
 
-	public GameObject endoflevelscreen;
+	public GameObject endoflevelscreen,overlay,pausescreen;
 
 	public GameObject[] stars;
 
@@ -58,4 +58,49 @@ public class LevelController : MonoBehaviour {
 		PlayerPrefs.Save ();
 		ad.volume = 0.5F;
 	}
+
+
+    public void Pause(bool state)
+    {
+       if(state == true)
+        {
+            Time.timeScale = 0;
+            overlay.SetActive(false);
+            pausescreen.SetActive(true);
+        }
+        if (state == false)
+        {
+            overlay.SetActive(true);
+            pausescreen.SetActive(false);
+            Time.timeScale = 1;
+        }
+    }
+
+
+    public void buttonstate(Button button)
+    {
+        if(button.name == "Resume")
+        {
+            Pause(false);
+        }
+
+        if(button.name == "ReportBug")
+        {
+            Application.OpenURL("https://github.com/Aldian1/RexAndMax/issues/");
+        }
+
+        if(button.name == "Restart")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        if (button.name == "Quit")
+        {
+            Application.Quit();
+        }
+
+
+    }
+
+    
 }

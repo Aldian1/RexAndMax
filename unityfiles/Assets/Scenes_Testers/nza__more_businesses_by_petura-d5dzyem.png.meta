@@ -1,0 +1,120 @@
+fileFormatVersion: 2
+guid: a1ceb2ed78c88ae448a034fc0825fd00
+timeCreated: 1462014440
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: nza__more_businesses_by_petura-d5dzyem_0
+    21300002: nza__more_businesses_by_petura-d5dzyem_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: nza__more_businesses_by_petura-d5dzyem_0
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 80
+        width: 292
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 116, y: -94.5}
+        - {x: 129, y: -54.5}
+        - {x: 129, y: -46.5}
+        - {x: 117, y: -36.5}
+        - {x: 118, y: 106.5}
+        - {x: 115, y: 110.5}
+        - {x: 69, y: 126.5}
+        - {x: -122, y: 126.5}
+        - {x: -125, y: 123.5}
+        - {x: -125, y: 120.5}
+        - {x: -123, y: 114.5}
+        - {x: -117, y: 105.5}
+        - {x: -113, y: 102.5}
+        - {x: -106, y: 86.5}
+        - {x: -100, y: -119.5}
+        - {x: -102, y: -140.5}
+        - {x: -72, y: -145.5}
+        - {x: -72, y: -148.5}
+        - {x: -62, y: -153.5}
+        - {x: -29, y: -153.5}
+        - {x: -15, y: -151.5}
+        - {x: -12, y: -146.5}
+        - {x: 113, y: -146.5}
+        - {x: 115, y: -144.5}
+    - name: nza__more_businesses_by_petura-d5dzyem_1
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 439
+        width: 251
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95.5, y: 15.5}
+        - {x: 55.5, y: 43.5}
+        - {x: 124.5, y: 78.5}
+        - {x: 124.5, y: 85.5}
+        - {x: 106.5, y: 106.5}
+        - {x: -94.5, y: 106.5}
+        - {x: -122.5, y: 92.5}
+        - {x: -122.5, y: 50.5}
+        - {x: -115.5, y: 41.5}
+        - {x: -118.5, y: -41.5}
+        - {x: -103.5, y: -96.5}
+        - {x: -55.5, y: -103.5}
+        - {x: 115.5, y: -103.5}
+        - {x: 124.5, y: -96.5}
+        - {x: 124.5, y: -44.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

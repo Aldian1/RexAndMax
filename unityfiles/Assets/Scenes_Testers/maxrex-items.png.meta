@@ -1,0 +1,323 @@
+fileFormatVersion: 2
+guid: 68bacd3aba6c2fc4fa0f20ba9a035138
+timeCreated: 1461833728
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: maxrex-items_0
+    21300002: maxrex-items_1
+    21300004: maxrex-items_2
+    21300006: maxrex-items_3
+    21300008: Gorillar Milk
+    21300010: maxrex-items_5
+    21300012: Chicken
+    21300014: T-Bone
+    21300016: Sausage
+    21300018: Burger
+    21300020: maxrex-items_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: maxrex-items_0
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 1548
+        width: 366
+        height: 946
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57.46933, y: -24.616028}
+        - {x: 63.46933, y: -7.616028}
+        - {x: 63.46933, y: 47.383972}
+        - {x: 42.46933, y: 162.38397}
+        - {x: -52.53067, y: 162.38397}
+        - {x: -62.53067, y: 157.38397}
+        - {x: -62.53067, y: -161.61603}
+        - {x: 48.46933, y: -161.61603}
+        - {x: 50.46933, y: -160.61603}
+        - {x: 63.46933, y: -150.61603}
+        - {x: 63.46933, y: -71.61603}
+    - name: maxrex-items_1
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 1829
+        width: 460
+        height: 486
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.386658, y: 83.798645}
+        - {x: 41.386658, y: 74.798645}
+        - {x: -5.6133423, y: 83.798645}
+        - {x: -27.613342, y: 83.798645}
+        - {x: -78.61334, y: 38.798645}
+        - {x: -78.61334, y: -26.201355}
+        - {x: 5.3866577, y: -83.201355}
+        - {x: 39.386658, y: -83.201355}
+        - {x: 79.38666, y: -15.201355}
+        - {x: 79.38666, y: 82.798645}
+        - {x: 73.38666, y: 83.798645}
+    - name: maxrex-items_2
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 1823
+        width: 547
+        height: 527
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 66.66669, y: 90.75067}
+        - {x: -15.333313, y: 90.75067}
+        - {x: -82.33331, y: 84.75067}
+        - {x: -93.33331, y: 52.75067}
+        - {x: -93.33331, y: -70.24933}
+        - {x: -53.333313, y: -90.24933}
+        - {x: 31.666687, y: -90.24933}
+        - {x: 91.66669, y: 7.7506714}
+        - {x: 94.66669, y: 12.750671}
+        - {x: 94.66669, y: 44.75067}
+    - name: maxrex-items_3
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 1817
+        width: 644
+        height: 510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.099976, y: 87.70264}
+        - {x: -66.900024, y: 77.70264}
+        - {x: -109.900024, y: 56.702637}
+        - {x: -109.900024, y: 19.702637}
+        - {x: -86.900024, y: -47.297363}
+        - {x: -31.900024, y: -87.29736}
+        - {x: 22.099976, y: -87.29736}
+        - {x: 40.099976, y: -83.29736}
+        - {x: 111.099976, y: 29.702637}
+        - {x: 111.099976, y: 77.70264}
+        - {x: 107.099976, y: 87.70264}
+    - name: Gorillar Milk
+      rect:
+        serializedVersion: 2
+        x: 3889
+        y: 1797
+        width: 445
+        height: 665
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63.945312, y: 57.375977}
+        - {x: 33.945312, y: 114.37598}
+        - {x: -36.054688, y: 114.37598}
+        - {x: -76.05469, y: 54.375977}
+        - {x: -76.05469, y: -94.62402}
+        - {x: -57.054688, y: -112.62402}
+        - {x: -53.054688, y: -113.62402}
+        - {x: 55.945312, y: -113.62402}
+        - {x: 71.94531, y: -107.62402}
+        - {x: 76.94531, y: -91.62402}
+        - {x: 76.94531, y: 4.3759766}
+    - name: maxrex-items_5
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 356
+        width: 894
+        height: 911
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 115.458664, y: -63.485336}
+        - {x: 143.45866, y: -26.485336}
+        - {x: 153.45866, y: 22.514664}
+        - {x: 153.45866, y: 121.51466}
+        - {x: 147.45866, y: 140.51466}
+        - {x: 126.458664, y: 152.51466}
+        - {x: 111.458664, y: 150.51466}
+        - {x: 76.458664, y: 156.51466}
+        - {x: 25.458664, y: 156.51466}
+        - {x: 1.458664, y: 141.51466}
+        - {x: -11.541336, y: 126.51466}
+        - {x: -6.541336, y: 33.514664}
+        - {x: -151.54134, y: -27.485336}
+        - {x: -152.54134, y: -29.485336}
+        - {x: -152.54134, y: -34.485336}
+        - {x: -75.541336, y: -155.48534}
+        - {x: 6.458664, y: -155.48534}
+        - {x: 19.458664, y: -151.48534}
+        - {x: 113.458664, y: -133.48534}
+        - {x: 135.45866, y: -123.48534}
+    - name: Chicken
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 570
+        width: 413
+        height: 568
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -70.38403, y: -96.94}
+        - {x: -0.3840332, y: -96.94}
+        - {x: 71.61597, y: -43.940002}
+        - {x: 71.61597, y: 62.059998}
+        - {x: 52.615967, y: 98.06}
+        - {x: -18.384033, y: 98.06}
+        - {x: -67.38403, y: 56.059998}
+        - {x: -70.38403, y: 32.059998}
+      - - {x: -8.384033, y: -69.94}
+        - {x: -6.384033, y: -71.94}
+        - {x: -3.3840332, y: -70.94}
+        - {x: -3.3840332, y: -66.94}
+        - {x: -5.384033, y: -64.94}
+        - {x: -8.384033, y: -65.94}
+    - name: T-Bone
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 619
+        width: 597
+        height: 454
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 87.11334, y: 78.285324}
+        - {x: -19.886658, y: 78.285324}
+        - {x: -81.88666, y: 35.285324}
+        - {x: -101.88666, y: 19.285324}
+        - {x: -101.88666, y: -51.714676}
+        - {x: -98.88666, y: -64.714676}
+        - {x: -49.886658, y: -77.714676}
+        - {x: 51.113342, y: -77.714676}
+        - {x: 94.11334, y: -68.714676}
+        - {x: 103.11334, y: -40.714676}
+        - {x: 103.11334, y: 54.285324}
+    - name: Sausage
+      rect:
+        serializedVersion: 2
+        x: 3119
+        y: 658
+        width: 612
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 100.61865, y: 62.597336}
+        - {x: -8.381348, y: 62.597336}
+        - {x: -57.381348, y: 51.597336}
+        - {x: -104.38135, y: 34.597336}
+        - {x: -104.38135, y: -25.402664}
+        - {x: -76.38135, y: -61.402664}
+        - {x: 20.618652, y: -61.402664}
+        - {x: 48.618652, y: -53.402664}
+        - {x: 92.61865, y: -9.402664}
+        - {x: 105.61865, y: 13.597336}
+        - {x: 105.61865, y: 59.597336}
+    - name: Burger
+      rect:
+        serializedVersion: 2
+        x: 3860
+        y: 631
+        width: 433
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -73.95337, y: -26.118668}
+        - {x: -67.95337, y: -60.118668}
+        - {x: -55.95337, y: -76.11867}
+        - {x: -45.95337, y: -85.11867}
+        - {x: 75.04663, y: -85.11867}
+        - {x: 75.04663, y: 47.881332}
+        - {x: 62.04663, y: 85.88133}
+        - {x: -37.95337, y: 85.88133}
+        - {x: -73.95337, y: 53.881332}
+      - - {x: 71.04663, y: 9.881332}
+        - {x: 73.04663, y: 6.8813324}
+        - {x: 75.04663, y: 7.8813324}
+        - {x: 75.04663, y: 10.881332}
+        - {x: 73.04663, y: 11.881332}
+    - name: maxrex-items_10
+      rect:
+        serializedVersion: 2
+        x: 4431
+        y: 614
+        width: 844
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 144.948, y: -2.921341}
+        - {x: 144.948, y: 49.07866}
+        - {x: 143.948, y: 50.07866}
+        - {x: -144.052, y: 50.07866}
+        - {x: -144.052, y: 1.078659}
+        - {x: -108.052, y: -48.92134}
+        - {x: -29.052002, y: -48.92134}
+        - {x: -22.052002, y: -44.92134}
+        - {x: -1.052002, y: -48.92134}
+        - {x: 109.948, y: -48.92134}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
