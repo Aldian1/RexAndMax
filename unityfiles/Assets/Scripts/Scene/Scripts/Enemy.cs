@@ -41,19 +41,13 @@ public class Enemy : MonoBehaviour {
     {
         if (Enemy_Type == EnemyType.mailbox)
         {
-            if (!incombat)
-            {
-                if (transform.eulerAngles.y < 180)
-                {
-                    transform.Translate(-transform.right * Time.deltaTime * speed);
-                }
-                if (transform.eulerAngles.y >= 180)
-                {
-                    transform.Translate(transform.right * Time.deltaTime * speed);
-                }
-            }
-
-          
+			if (!incombat) {
+				if (transform.localScale.x == .5F) {
+					transform.Translate (-transform.right * Time.deltaTime * speed);
+				} else {
+					transform.Translate (transform.right * Time.deltaTime * speed);
+				}
+			}
         }
         if (Enemy_Type == EnemyType.flying)
         {
@@ -109,7 +103,14 @@ public class Enemy : MonoBehaviour {
     IEnumerator Refresh()
     {
         yield return new WaitForSeconds(2);
-        transform.Rotate(0, +180, 0);
+        //transform.Rotate(0, +180, 0);
+		if (transform.localScale.x == .5F) {
+
+			transform.localScale = new Vector3(-.5F,.5F,.5F);
+		} else {
+			transform.localScale = new Vector3(.5F,.5F,.5F);
+		}
+
         StartCoroutine("Refresh");
     }
 

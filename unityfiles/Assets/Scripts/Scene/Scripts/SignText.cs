@@ -6,10 +6,14 @@ public class SignText : MonoBehaviour {
 
     
     public string TextToDisplay;
-    private GameObject SignDeliver;
+	private GameObject SignDeliver;
 	// Use this for initialization
 	void Start () {
-        SignDeliver = GameObject.FindGameObjectWithTag("SignText");
+
+		GameObject go = GameObject.Find ("Overlay");
+		SignDeliver = go.transform.FindChild ("ST").gameObject;
+
+	
  
     }
 
