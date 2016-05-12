@@ -15,7 +15,11 @@ public class Enemy : MonoBehaviour {
 
     public GameObject smokecloud, scoreobject_;
 
+    public bool incombat;
 
+    private Animator rex;
+
+    
 
     // Use this for initialization
     void Start() {
@@ -37,15 +41,19 @@ public class Enemy : MonoBehaviour {
     {
         if (Enemy_Type == EnemyType.mailbox)
         {
+            if (!incombat)
+            {
+                if (transform.eulerAngles.y < 180)
+                {
+                    transform.Translate(-transform.right * Time.deltaTime * speed);
+                }
+                if (transform.eulerAngles.y >= 180)
+                {
+                    transform.Translate(transform.right * Time.deltaTime * speed);
+                }
+            }
 
-            if (transform.eulerAngles.y < 180)
-            {
-                transform.Translate(-transform.right * Time.deltaTime * speed);
-            }
-            if (transform.eulerAngles.y >= 180)
-            {
-                transform.Translate(transform.right * Time.deltaTime * speed);
-            }
+          
         }
         if (Enemy_Type == EnemyType.flying)
         {
@@ -65,7 +73,13 @@ public class Enemy : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D col)
     {
         Collider2D collider = col.collider;
-
+        if(col.transform.tag == "Rex")
+        {
+            incombat = true;
+            InvokeRepeating("Combat",0,.35F);
+            rex = col.gameObject.GetComponent<Animator>();
+            StopCoroutine("Refresh");
+        }
         if (col.gameObject.tag == "Player")
         {
 
@@ -99,11 +113,6 @@ public class Enemy : MonoBehaviour {
         StartCoroutine("Refresh");
     }
 
-    void Fireballs()
-    {
-        // GameObject fireball = Instantiate(fireball_, transform.position, Quaternion.identity) as GameObject;
-
-    }
 
     void Effect(GameObject effect)
     {
@@ -122,5 +131,27 @@ public class Enemy : MonoBehaviour {
 
        
         
+    }
+
+    public void Combat()
+    {
+      if(rex.GetCurrentAnimatorStateInfo(0).IsName("Atk1"))
+        {
+            GetComponent<SpriteRenderer>().color = Color.green;
+            return;
+        }
+        if (rex.GetCurrentAnimatorStateInfo(0).IsName("Atk2"))
+        {
+            GetComponent<SpriteRenderer>().color = Color.cyan;
+            return;
+        }
+        if (rex.GetCurrentAnimatorStateInfo(0).IsName("Atk3"))
+        {
+            GetComponent<SpriteRenderer>().color = Color.red;
+            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 800);
+            Effect(smokecloud);
+            return;
+        }
+
     }
 }
