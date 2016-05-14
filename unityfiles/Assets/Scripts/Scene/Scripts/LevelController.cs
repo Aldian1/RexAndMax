@@ -92,6 +92,7 @@ public class LevelController : MonoBehaviour {
         if(button.name == "Restart")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			Time.timeScale = 1;
         }
 
         if (button.name == "Quit")

@@ -63,20 +63,18 @@ public class Player_Controller : MonoBehaviour
        
        // if (!InCombat)
        // {
-            if (keyboardcontrols)
-            {
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    if (onground == true)
-                    {
-                        //Debug.Log ("jump");
-                        onground = false;
-                        rb.AddForce(Vector2.up * Jumpower);
-                        Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.red);
+		if (keyboardcontrols) {
+			if (Input.GetKeyDown (KeyCode.Space)) {
+				if (onground == true) {
+					//Debug.Log ("jump");
+					onground = false;
+					rb.AddForce (Vector2.up * Jumpower);
+					Debug.DrawRay (transform.position, -Vector2.up * 2.5F, Color.red);
 
-                        return;
-                    }
-                }
+					return;
+				}
+			}
+		}
           //  }
             Controls();
 
@@ -90,7 +88,7 @@ public class Player_Controller : MonoBehaviour
 
             }
         }
-    }
+    
 
     void OnCollisionEnter2D(Collision2D col)
     {
@@ -220,7 +218,7 @@ public class Player_Controller : MonoBehaviour
 
     public void SliderStick(GameObject objectcalling)
     {
-        if (keyboardcontrols == false && InCombat == false)
+        if (keyboardcontrols == false)
         {
 
             float Slider_ = objectcalling.GetComponent<Slider>().value;

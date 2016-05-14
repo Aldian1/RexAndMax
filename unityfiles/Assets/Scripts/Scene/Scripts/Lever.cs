@@ -10,26 +10,53 @@ public class Lever : MonoBehaviour {
     public string animtosettrue;
     Animator ar;
 
+	public enum Type 
+	{
+		lever = 0,
+		button = 1,
+	};
+
+	public Type Type_;
     void Start()
     {
-        ar = GetComponent<Animator>();
+		if (Type_ == Type.lever) {
+			ar = GetComponent<Animator> ();
+		}
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        ar.SetBool("On", true);
-        ObjecToInteractWith.GetComponent<Animator>().SetBool(animtosettrue, true);
-        
-        
-        StartCoroutine("Timer", Camera.main.GetComponent<Camera2DFollow>().target);
-
+		if (Type_ == Type.lever) {
+			if(col.tag == "Player")
+			{
+			ar.SetBool ("On", true);
+			ObjecToInteractWith.GetComponent<Animator> ().SetBool (animtosettrue, true);
+			StartCoroutine ("Timer", Camera.main.GetComponent<Camera2DFollow> ().target);
+			}
+		}
     }
+
+	void OnCollisionEnter2D(Collision2D col)
+	{
+		if (Type_ == Type.button) {
+			if (col.transform.name == "Box") {
+				transform.localScale = new Vector3 (1,.5F,1);
+				StartCoroutine ("Timer", Camera.main.GetComponent<Camera2DFollow> ().target);
+				ObjecToInteractWith.GetComponent<Animator> ().SetBool (animtosettrue, true);
+				return;
+			}
+		}
+
+	}
 
     IEnumerator Timer(Transform go)
     {
-        Camera.main.GetComponent<Camera2DFollow>().target = ObjecToInteractWith.transform;
-        yield return new WaitForSeconds(2F);
-        Camera.main.GetComponent<Camera2DFollow>().target = go;
-        this.enabled = false;
+		if (this.enabled == true) {
+			Camera.main.GetComponent<Camera2DFollow> ().target = ObjecToInteractWith.transform;
+			yield return new WaitForSeconds (2F);
+			Camera.main.GetComponent<Camera2DFollow> ().target = go;
+			this.enabled = false;
+			StopCoroutine ("Timer");
+		}
     }
 }

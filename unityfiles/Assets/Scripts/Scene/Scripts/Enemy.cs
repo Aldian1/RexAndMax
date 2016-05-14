@@ -74,28 +74,8 @@ public class Enemy : MonoBehaviour {
             rex = col.gameObject.GetComponent<Animator>();
             StopCoroutine("Refresh");
         }
-        if (col.gameObject.tag == "Player")
-        {
-
-            Vector3 contactPoint = col.contacts[0].point;
-            //   bool left = contactPoint.x < center.x;
-            float x = contactPoint.x -= transform.position.x;
-          //  Debug.Log(x);
-            if (x < -1.7F || x > 1.7F)
-            {
-
-                //if we land on top
-                col.gameObject.GetComponent<Player_Controller>().UpdateHealth(.2F);
-
-            }
-            else
-            {
-                //if we land on bottom
-                col.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 800);
-
-                Effect(smokecloud);
-            }
-        }
+       
+        
     }
 
 
@@ -136,23 +116,13 @@ public class Enemy : MonoBehaviour {
 
     public void Combat()
     {
-      if(rex.GetCurrentAnimatorStateInfo(0).IsName("Atk1"))
-        {
-            GetComponent<SpriteRenderer>().color = Color.green;
-            return;
-        }
-        if (rex.GetCurrentAnimatorStateInfo(0).IsName("Atk2"))
-        {
-            GetComponent<SpriteRenderer>().color = Color.cyan;
-            return;
-        }
-        if (rex.GetCurrentAnimatorStateInfo(0).IsName("Atk3"))
-        {
-            GetComponent<SpriteRenderer>().color = Color.red;
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 800);
-            Effect(smokecloud);
-            return;
-        }
+		if (rex.GetCurrentAnimatorStateInfo (0).IsName ("Atk1")) {
+			GetComponent<Rigidbody2D>().AddForce(Vector2.up * 800);
+			Effect(smokecloud);
+			CancelInvoke ("Combat");
+			return;
+		}
+        
 
     }
 }
