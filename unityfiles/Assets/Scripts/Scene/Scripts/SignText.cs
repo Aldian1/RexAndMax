@@ -7,6 +7,8 @@ public class SignText : MonoBehaviour {
     
     public string TextToDisplay;
 	private GameObject SignDeliver;
+    public GameObject tap;
+    public bool tapped;
 	// Use this for initialization
 	void Start () {
 
@@ -19,10 +21,15 @@ public class SignText : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col)
     {
+
         if (col.tag == "Player")
         {
-            SignDeliver.SetActive(true);
-            SignDeliver.GetComponentInChildren<Text>().text = TextToDisplay;
+           // tap.SetActive(true);
+          //  if (tapped)
+         //   {
+                SignDeliver.SetActive(true);
+                SignDeliver.GetComponentInChildren<Text>().text = TextToDisplay;
+           // }
         }
     }
 
@@ -31,8 +38,13 @@ public class SignText : MonoBehaviour {
 
         if (col.tag == "Player")
         {
-            SignDeliver.SetActive(false);
-            SignDeliver.GetComponentInChildren<Text>().text = TextToDisplay;
+        //    tap.SetActive(false);
+         //   if (tapped == false)
+        //    {
+               
+                SignDeliver.SetActive(false);
+                SignDeliver.GetComponentInChildren<Text>().text = TextToDisplay;
+          //  }
         }
     }
 }

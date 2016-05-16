@@ -26,7 +26,7 @@ public class HealthListener : MonoBehaviour {
     {
         currenthealth -= amount;
         GetComponent<Image>().fillAmount = currenthealth;
-		if (currenthealth == 0) {
+		if (currenthealth <= 0) {
 
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}

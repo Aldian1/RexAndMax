@@ -5,35 +5,51 @@ using UnityStandardAssets._2D;
 public class Lever : MonoBehaviour {
 
 
-    private bool playernear;
+    private bool playernear, tapped;
     public GameObject ObjecToInteractWith;
     public string animtosettrue;
     Animator ar;
+    public GameObject tap;
 
-	public enum Type 
-	{
-		lever = 0,
-		button = 1,
-	};
+    public enum Type
+    {
+        lever = 0,
+        button = 1,
+    };
 
-	public Type Type_;
+    public Type Type_;
     void Start()
     {
-		if (Type_ == Type.lever) {
-			ar = GetComponent<Animator> ();
-		}
+        if (Type_ == Type.lever) {
+            ar = GetComponent<Animator>();
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
-		if (Type_ == Type.lever) {
-			if(col.tag == "Player")
-			{
-			ar.SetBool ("On", true);
-			ObjecToInteractWith.GetComponent<Animator> ().SetBool (animtosettrue, true);
-			StartCoroutine ("Timer", Camera.main.GetComponent<Camera2DFollow> ().target);
-			}
-		}
+        if (col.tag == "Player")
+        {
+            //tap.SetActive(true);
+           // if (tapped == true)
+           // {
+                if (Type_ == Type.lever)
+                {
+
+                    ar.SetBool("On", true);
+                    ObjecToInteractWith.GetComponent<Animator>().SetBool(animtosettrue, true);
+                    StartCoroutine("Timer", Camera.main.GetComponent<Camera2DFollow>().target);
+               // }
+            }
+        }
+    }
+
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.tag == "Player")
+        {
+         //   tap.SetActive(false);
+        }
     }
 
 	void OnCollisionEnter2D(Collision2D col)

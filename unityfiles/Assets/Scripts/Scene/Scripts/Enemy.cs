@@ -23,7 +23,10 @@ public class Enemy : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-       scoreobject_ = GameObject.FindGameObjectWithTag("ScoreEffect");
+        GameObject go = GameObject.FindGameObjectWithTag("Rex");
+    //    Physics2D.IgnoreCollision(go.GetComponent<Collider2D>(), this.GetComponent<Collider2D>());
+
+        scoreobject_ = GameObject.FindGameObjectWithTag("ScoreEffect");
 
         if (Enemy_Type == EnemyType.mailbox)
         {
@@ -41,12 +44,12 @@ public class Enemy : MonoBehaviour {
     {
         if (Enemy_Type == EnemyType.mailbox)
         {
-			if (!incombat) {
+			
 				if (transform.localScale.x == .5F) {
 					transform.Translate (-transform.right * Time.deltaTime * speed);
 				} else {
 					transform.Translate (transform.right * Time.deltaTime * speed);
-				}
+				
 			}
         }
         if (Enemy_Type == EnemyType.flying)
@@ -67,9 +70,14 @@ public class Enemy : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D col)
     {
         Collider2D collider = col.collider;
-        if(col.transform.tag == "Rex")
+        if (col.transform.tag == "Player")
         {
-            incombat = true;
+            col.transform.GetComponent<Player_Controller>().UpdateHealth(.2F);
+        }
+
+        if (col.transform.tag == "Rex")
+        {
+            
             InvokeRepeating("Combat",0,.35F);
             rex = col.gameObject.GetComponent<Animator>();
             StopCoroutine("Refresh");
@@ -116,7 +124,7 @@ public class Enemy : MonoBehaviour {
 
     public void Combat()
     {
-		if (rex.GetCurrentAnimatorStateInfo (0).IsName ("Atk1")) {
+		if (rex.GetCurrentAnimatorStateInfo (0).IsName ("Atk1") || rex.GetCurrentAnimatorStateInfo(0).IsName("Atk2") || rex.GetCurrentAnimatorStateInfo(0).IsName("Atk3")) {
 			GetComponent<Rigidbody2D>().AddForce(Vector2.up * 800);
 			Effect(smokecloud);
 			CancelInvoke ("Combat");
