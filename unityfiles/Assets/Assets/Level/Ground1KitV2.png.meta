@@ -1,0 +1,1187 @@
+fileFormatVersion: 2
+guid: 5f525c1ba7b8a2047b4b876cd7761015
+timeCreated: 1463499266
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: TopLeft_Plain
+    21300002: Top_Plain
+    21300004: TopRight_Plain
+    21300006: TopLeft_Indent
+    21300008: Top_Indent
+    21300010: TopRight_Indent
+    21300012: Grass_Left
+    21300014: Grass_Middle
+    21300016: Grass_Right
+    21300018: MiddleLeft_Plain
+    21300020: Middle_Plain
+    21300022: Right_Plain
+    21300024: Left_Indent
+    21300026: Middle_Indent
+    21300028: Right_Indent
+    21300030: Ident_1
+    21300032: Indent_2
+    21300034: Ground1KitV2_17
+    21300036: BottomLeft_Plain
+    21300038: Bottom_Plain
+    21300040: BottomRight_Plain
+    21300042: BottomLeft_Indent
+    21300044: Bottom_Indent
+    21300046: BottomRight_Indent
+    21300048: Plain_1
+    21300050: Plain_2
+    21300052: Grass_Normal
+    21300054: Directional_Sign
+    21300056: Button_Holder
+    21300058: Button
+    21300060: DoorFrame
+    21300062: TopLeft_House
+    21300064: TopMiddle_House
+    21300066: TopRight_House
+    21300068: House_Plain
+    21300070: Ground1KitV2_35
+    21300072: Spikes
+    21300074: CrackedEarth
+    21300076: LeverHolder
+    21300078: Ground1KitV2_39
+    21300080: LeftMiddle_House
+    21300082: Middle_House
+    21300084: MiddleRight_House
+    21300086: Sign_Reading
+    21300088: FenceTop
+    21300090: Lever
+    21300092: Box
+    21300094: BottomLeft_House
+    21300096: MiddleBottom_House
+    21300098: BottomRIght_House
+    21300100: FenceWarpedTop
+    21300102: FenceMiddle
+    21300104: MarshmallowHedge
+    21300106: MediumSPikeyHedge
+    21300108: SmallSpikeyHedge
+    21300110: Tire
+    21300112: PenisHege
+    21300114: SmallHedge
+    21300116: CrackedPlatform
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: TopLeft_Plain
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -114, y: 114.333374}
+        - {x: -114, y: -113.666626}
+        - {x: 114, y: -113.666626}
+        - {x: 114, y: 114.333374}
+    - name: Top_Plain
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.94444, y: 114.333374}
+        - {x: -113.94444, y: -113.666626}
+        - {x: 115.05556, y: -113.666626}
+        - {x: 115.05556, y: 114.333374}
+    - name: TopRight_Plain
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.888885, y: 114.333374}
+        - {x: -113.888885, y: -113.666626}
+        - {x: 114.111115, y: -113.666626}
+        - {x: 114.111115, y: 114.333374}
+    - name: TopLeft_Indent
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.83331, y: 114.333374}
+        - {x: -113.83331, y: -113.666626}
+        - {x: 115.16669, y: -113.666626}
+        - {x: 115.16669, y: 114.333374}
+    - name: Top_Indent
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.77777, y: 114.333374}
+        - {x: -113.77777, y: -113.666626}
+        - {x: 114.22223, y: -113.666626}
+        - {x: 114.22223, y: 114.333374}
+    - name: TopRight_Indent
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.72217, y: 114.333374}
+        - {x: -113.72217, y: -113.666626}
+        - {x: 115.27783, y: -113.666626}
+        - {x: 115.27783, y: 114.333374}
+    - name: Grass_Left
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.666626, y: 114.333374}
+        - {x: -113.666626, y: 49.333374}
+        - {x: -111.666626, y: 45.333374}
+        - {x: -88.666626, y: 37.333374}
+        - {x: 114.333374, y: 37.333374}
+        - {x: 114.333374, y: 114.333374}
+    - name: Grass_Middle
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 3000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -112.611084, y: 114.333374}
+        - {x: -113.611084, y: 113.333374}
+        - {x: -113.611084, y: 52.333374}
+        - {x: -85.611084, y: 37.333374}
+        - {x: 115.388916, y: 37.333374}
+        - {x: 115.388916, y: 114.333374}
+    - name: Grass_Right
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.55554, y: 114.333374}
+        - {x: -113.55554, y: 37.333374}
+        - {x: 111.44446, y: 37.333374}
+        - {x: 114.44446, y: 41.333374}
+        - {x: 114.44446, y: 114.333374}
+    - name: MiddleLeft_Plain
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -114, y: 115.27783}
+        - {x: -114, y: -112.72217}
+        - {x: -113, y: -113.72217}
+        - {x: 114, y: -113.72217}
+        - {x: 114, y: 115.27783}
+    - name: Middle_Plain
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.94444, y: 115.27783}
+        - {x: -113.94444, y: -112.72217}
+        - {x: -112.94444, y: -113.72217}
+        - {x: 115.05556, y: -113.72217}
+        - {x: 115.05556, y: 115.27783}
+    - name: Right_Plain
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.888885, y: 115.27783}
+        - {x: -113.888885, y: -112.72217}
+        - {x: -112.888885, y: -113.72217}
+        - {x: 114.111115, y: -113.72217}
+        - {x: 114.111115, y: 115.27783}
+    - name: Left_Indent
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.83331, y: 115.27783}
+        - {x: -113.83331, y: -112.72217}
+        - {x: -112.83331, y: -113.72217}
+        - {x: 115.16669, y: -113.72217}
+        - {x: 115.16669, y: 115.27783}
+    - name: Middle_Indent
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.77777, y: 115.27783}
+        - {x: -113.77777, y: -112.72217}
+        - {x: -112.77777, y: -113.72217}
+        - {x: 114.22223, y: -113.72217}
+        - {x: 114.22223, y: 115.27783}
+    - name: Right_Indent
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.72217, y: 115.27783}
+        - {x: -113.72217, y: -112.72217}
+        - {x: -112.72217, y: -113.72217}
+        - {x: 115.27783, y: -113.72217}
+        - {x: 115.27783, y: 115.27783}
+    - name: Ident_1
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.666626, y: 115.27783}
+        - {x: -113.666626, y: -112.72217}
+        - {x: -112.666626, y: -113.72217}
+        - {x: 114.333374, y: -113.72217}
+        - {x: 114.333374, y: 115.27783}
+    - name: Indent_2
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -112.611084, y: 115.27783}
+        - {x: -113.611084, y: 114.27783}
+        - {x: -113.611084, y: -111.72217}
+        - {x: -111.611084, y: -113.72217}
+        - {x: 115.388916, y: -113.72217}
+        - {x: 115.388916, y: 115.27783}
+    - name: Ground1KitV2_17
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 114.44446, y: 115.27783}
+        - {x: -113.55554, y: 115.27783}
+        - {x: -113.55554, y: 69.27783}
+        - {x: -99.55554, y: 34.277832}
+        - {x: -41.555542, y: -78.72217}
+        - {x: -21.555542, y: -113.72217}
+        - {x: -4.555542, y: -113.72217}
+        - {x: 50.444458, y: -32.722168}
+        - {x: 81.44446, y: -13.722168}
+        - {x: 114.44446, y: 63.277832}
+    - name: BottomLeft_Plain
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -114, y: 114.22223}
+        - {x: -114, y: -113.77777}
+        - {x: 114, y: -113.77777}
+        - {x: 114, y: 114.22223}
+    - name: Bottom_Plain
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.94444, y: 114.22223}
+        - {x: -113.94444, y: -113.77777}
+        - {x: 115.05556, y: -113.77777}
+        - {x: 115.05556, y: 114.22223}
+    - name: BottomRight_Plain
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.888885, y: 114.22223}
+        - {x: -113.888885, y: -113.77777}
+        - {x: 114.111115, y: -113.77777}
+        - {x: 114.111115, y: 114.22223}
+    - name: BottomLeft_Indent
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.83331, y: 114.22223}
+        - {x: -113.83331, y: -113.77777}
+        - {x: 115.16669, y: -113.77777}
+        - {x: 115.16669, y: 114.22223}
+    - name: Bottom_Indent
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.77777, y: 114.22223}
+        - {x: -113.77777, y: -113.77777}
+        - {x: 114.22223, y: -113.77777}
+        - {x: 114.22223, y: 114.22223}
+    - name: BottomRight_Indent
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.72217, y: 114.22223}
+        - {x: -113.72217, y: -113.77777}
+        - {x: 115.27783, y: -113.77777}
+        - {x: 115.27783, y: 114.22223}
+    - name: Plain_1
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.666626, y: 114.22223}
+        - {x: -113.666626, y: -113.77777}
+        - {x: 114.333374, y: -113.77777}
+        - {x: 114.333374, y: 114.22223}
+    - name: Plain_2
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -112.611084, y: 114.22223}
+        - {x: -113.611084, y: 113.22223}
+        - {x: -113.611084, y: -112.77777}
+        - {x: -112.611084, y: -113.77777}
+        - {x: 115.388916, y: -113.77777}
+        - {x: 115.388916, y: 114.22223}
+    - name: Grass_Normal
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.55554, y: 114.22223}
+        - {x: -113.55554, y: 37.22223}
+        - {x: 111.44446, y: 37.22223}
+        - {x: 114.44446, y: 39.22223}
+        - {x: 114.44446, y: 114.22223}
+    - name: Directional_Sign
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 115.16669}
+        - {x: -27, y: 115.16669}
+        - {x: -95, y: 46.166687}
+        - {x: -95, y: 40.166687}
+        - {x: -93, y: 37.166687}
+        - {x: -48, y: 34.166687}
+        - {x: -45, y: -113.83331}
+        - {x: 45, y: -113.83331}
+        - {x: 93, y: 33.166687}
+        - {x: 93, y: 49.166687}
+        - {x: 42, y: 105.16669}
+    - name: Button_Holder
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.94444, y: -55.833313}
+        - {x: -113.94444, y: -113.83331}
+        - {x: 115.05556, y: -113.83331}
+        - {x: 115.05556, y: -57.833313}
+        - {x: 113.05556, y: -55.833313}
+    - name: Button
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -94.888885, y: -33.833313}
+        - {x: -99.888885, y: -34.833313}
+        - {x: -99.888885, y: -79.83331}
+        - {x: -98.888885, y: -81.83331}
+        - {x: 99.111115, y: -81.83331}
+        - {x: 99.111115, y: -34.833313}
+        - {x: 95.111115, y: -33.833313}
+    - name: DoorFrame
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.83331, y: 115.16669}
+        - {x: -113.83331, y: 84.16669}
+        - {x: -111.83331, y: 82.16669}
+        - {x: 21.166687, y: 67.16669}
+        - {x: 114.16669, y: 67.16669}
+        - {x: 115.16669, y: 71.16669}
+        - {x: 115.16669, y: 115.16669}
+    - name: TopLeft_House
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 112.22223, y: 115.16669}
+        - {x: -113.77777, y: -110.83331}
+        - {x: -113.77777, y: -112.83331}
+        - {x: -112.77777, y: -113.83331}
+        - {x: 114.22223, y: -113.83331}
+        - {x: 114.22223, y: 115.16669}
+    - name: TopMiddle_House
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.72217, y: 115.16669}
+        - {x: -113.72217, y: -113.83331}
+        - {x: 115.27783, y: -113.83331}
+        - {x: 115.27783, y: 115.16669}
+    - name: TopRight_House
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.333374, y: -14.833313}
+        - {x: 4.333374, y: 1.166687}
+        - {x: -110.666626, y: 115.16669}
+        - {x: -112.666626, y: 115.16669}
+        - {x: -113.666626, y: 114.16669}
+        - {x: -113.666626, y: -113.83331}
+        - {x: 114.333374, y: -113.83331}
+        - {x: 114.333374, y: -107.83331}
+        - {x: 81.333374, y: -74.83331}
+    - name: House_Plain
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.611084, y: 115.16669}
+        - {x: -113.611084, y: -112.83331}
+        - {x: -112.611084, y: -113.83331}
+        - {x: 115.388916, y: -113.83331}
+        - {x: 115.388916, y: 115.16669}
+    - name: Ground1KitV2_35
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.55554, y: -113.83331}
+        - {x: -109.55554, y: -113.83331}
+        - {x: -109.55554, y: 114.16669}
+        - {x: -110.55554, y: 115.16669}
+        - {x: -113.55554, y: 115.16669}
+    - name: Spikes
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 114, y: -73.888885}
+        - {x: 114, y: 50.111115}
+        - {x: 70, y: 114.111115}
+        - {x: -5, y: 114.111115}
+        - {x: -56, y: 68.111115}
+        - {x: -87, y: 112.111115}
+        - {x: -107, y: 27.111115}
+        - {x: -114, y: 5.1111145}
+        - {x: -114, y: -90.888885}
+        - {x: -87, y: -113.888885}
+        - {x: 93, y: -113.888885}
+    - name: CrackedEarth
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.94444, y: 114.111115}
+        - {x: -113.94444, y: -113.888885}
+        - {x: 115.05556, y: -113.888885}
+        - {x: 115.05556, y: 114.111115}
+    - name: LeverHolder
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.111115, y: -27.888885}
+        - {x: -27.888885, y: -27.888885}
+        - {x: -92.888885, y: -38.888885}
+        - {x: -113.888885, y: -78.888885}
+        - {x: -113.888885, y: -113.888885}
+        - {x: 114.111115, y: -113.888885}
+        - {x: 114.111115, y: -81.888885}
+        - {x: 80.111115, y: -56.888885}
+    - name: Ground1KitV2_39
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103.83331, y: -66.888885}
+        - {x: -107.83331, y: -69.888885}
+        - {x: -113.83331, y: -75.888885}
+        - {x: -113.83331, y: -113.888885}
+        - {x: 115.16669, y: -113.888885}
+        - {x: 115.16669, y: -78.888885}
+        - {x: -37.833313, y: -66.888885}
+    - name: LeftMiddle_House
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -0.777771, y: 114.111115}
+        - {x: -1.777771, y: 113.111115}
+        - {x: -1.777771, y: -112.888885}
+        - {x: -0.777771, y: -113.888885}
+        - {x: 114.22223, y: -113.888885}
+        - {x: 114.22223, y: 114.111115}
+    - name: Middle_House
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.72217, y: 114.111115}
+        - {x: -113.72217, y: -113.888885}
+        - {x: 115.27783, y: -113.888885}
+        - {x: 115.27783, y: 114.111115}
+    - name: MiddleRight_House
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.666626, y: 114.111115}
+        - {x: -113.666626, y: -113.888885}
+        - {x: 2.333374, y: -113.888885}
+        - {x: 2.333374, y: 113.111115}
+        - {x: 1.333374, y: 114.111115}
+    - name: Sign_Reading
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -112.611084, y: 114.111115}
+        - {x: -113.611084, y: 113.111115}
+        - {x: -113.611084, y: 9.1111145}
+        - {x: -111.611084, y: 7.1111145}
+        - {x: -18.611084, y: 7.1111145}
+        - {x: -18.611084, y: -104.888885}
+        - {x: -15.611084, y: -107.888885}
+        - {x: 16.388916, y: -107.888885}
+        - {x: 19.388916, y: -104.888885}
+        - {x: 115.388916, y: 8.1111145}
+        - {x: 115.388916, y: 114.111115}
+    - name: FenceTop
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50.444458, y: 114.111115}
+        - {x: 28.444458, y: 90.111115}
+        - {x: 4.444458, y: 58.111115}
+        - {x: -8.555542, y: 65.111115}
+        - {x: -49.555542, y: 114.111115}
+        - {x: -60.555542, y: 114.111115}
+        - {x: -75.55554, y: 97.111115}
+        - {x: -91.55554, y: 79.111115}
+        - {x: -113.55554, y: 47.111115}
+        - {x: -113.55554, y: -113.888885}
+        - {x: 114.44446, y: -113.888885}
+        - {x: 114.44446, y: 57.111115}
+        - {x: 67.44446, y: 114.111115}
+      - - {x: -0.555542, y: 71.111115}
+        - {x: 1.444458, y: 69.111115}
+        - {x: 4.444458, y: 70.111115}
+        - {x: 4.444458, y: 75.111115}
+        - {x: 2.444458, y: 77.111115}
+        - {x: -0.555542, y: 76.111115}
+      - - {x: -3.555542, y: 85.111115}
+        - {x: -3.555542, y: 78.111115}
+        - {x: -1.555542, y: 76.111115}
+        - {x: 1.444458, y: 77.111115}
+        - {x: 2.444458, y: 84.111115}
+        - {x: -0.555542, y: 87.111115}
+        - {x: -1.555542, y: 87.111115}
+    - name: Lever
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 90.05556}
+        - {x: -15, y: -81.94444}
+        - {x: 5, y: -81.94444}
+        - {x: 18, y: -74.94444}
+        - {x: 12, y: -60.944443}
+        - {x: 37, y: 2.0555573}
+        - {x: 37, y: 90.05556}
+    - name: Box
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -112.94444, y: 115.05556}
+        - {x: -113.94444, y: 114.05556}
+        - {x: -113.94444, y: -113.94444}
+        - {x: 115.05556, y: -113.94444}
+        - {x: 115.05556, y: 115.05556}
+    - name: BottomLeft_House
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.222229, y: 115.05556}
+        - {x: -1.777771, y: 113.05556}
+        - {x: -1.777771, y: -112.94444}
+        - {x: -0.777771, y: -113.94444}
+        - {x: 114.22223, y: -113.94444}
+        - {x: 114.22223, y: 115.05556}
+    - name: MiddleBottom_House
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -112.72217, y: 115.05556}
+        - {x: -113.72217, y: 114.05556}
+        - {x: -113.72217, y: -113.94444}
+        - {x: 115.27783, y: -113.94444}
+        - {x: 115.27783, y: 115.05556}
+    - name: BottomRIght_House
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -112.666626, y: 115.05556}
+        - {x: -113.666626, y: 114.05556}
+        - {x: -113.666626, y: -113.94444}
+        - {x: 2.333374, y: -113.94444}
+        - {x: 2.333374, y: 113.05556}
+        - {x: 0.33337402, y: 115.05556}
+    - name: FenceWarpedTop
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 107.388916, y: 60.055557}
+        - {x: 96.388916, y: 76.05556}
+        - {x: 69.388916, y: 115.05556}
+        - {x: 39.388916, y: 115.05556}
+        - {x: 35.388916, y: 114.05556}
+        - {x: 33.388916, y: 68.05556}
+        - {x: 1.388916, y: 71.05556}
+        - {x: -46.611084, y: 115.05556}
+        - {x: -58.611084, y: 115.05556}
+        - {x: -64.611084, y: 113.05556}
+        - {x: -102.611084, y: 63.055557}
+        - {x: -113.611084, y: 59.055557}
+        - {x: -113.611084, y: -113.94444}
+        - {x: 115.388916, y: -113.94444}
+        - {x: 115.388916, y: 46.055557}
+        - {x: 112.388916, y: 52.055557}
+      - - {x: 0.38891602, y: 71.05556}
+        - {x: 2.388916, y: 69.05556}
+        - {x: 5.388916, y: 70.05556}
+        - {x: 5.388916, y: 75.05556}
+        - {x: 3.388916, y: 77.05556}
+        - {x: 0.38891602, y: 76.05556}
+      - - {x: -2.611084, y: 80.05556}
+        - {x: -0.611084, y: 78.05556}
+        - {x: 2.388916, y: 79.05556}
+        - {x: 2.388916, y: 85.05556}
+        - {x: 0.38891602, y: 87.05556}
+        - {x: -2.611084, y: 86.05556}
+    - name: FenceMiddle
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -112.55554, y: 115.05556}
+        - {x: -113.55554, y: 114.05556}
+        - {x: -113.55554, y: -113.94444}
+        - {x: 114.44446, y: -113.94444}
+        - {x: 114.44446, y: 115.05556}
+    - name: MarshmallowHedge
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 61, y: 76.27556}
+        - {x: 6, y: 76.27556}
+        - {x: -21, y: 58.27556}
+        - {x: -40, y: 40.27556}
+        - {x: -108, y: -22.724442}
+        - {x: -108, y: -113.72444}
+        - {x: 100, y: -113.72444}
+        - {x: 100, y: -80.72444}
+        - {x: 87, y: 50.27556}
+    - name: MediumSPikeyHedge
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.9444427, y: -22}
+        - {x: -62.944443, y: -43}
+        - {x: -98.94444, y: -83}
+        - {x: -98.94444, y: -113}
+        - {x: -97.94444, y: -114}
+        - {x: 95.05556, y: -114}
+        - {x: 95.05556, y: -58}
+        - {x: 40.055557, y: -22}
+    - name: SmallSpikeyHedge
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.8888855, y: -68}
+        - {x: -27.888885, y: -68}
+        - {x: -44.888885, y: -93}
+        - {x: -44.888885, y: -108}
+        - {x: -42.888885, y: -114}
+        - {x: 45.111115, y: -114}
+        - {x: 45.111115, y: -91}
+        - {x: 32.111115, y: -72}
+    - name: Tire
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60.166687, y: 1}
+        - {x: 40.166687, y: 7}
+        - {x: -60.833313, y: 7}
+        - {x: -98.83331, y: -24}
+        - {x: -98.83331, y: -114}
+        - {x: 114.16669, y: -114}
+        - {x: 114.16669, y: -63}
+        - {x: 107.16669, y: -40}
+      - - {x: 43.166687, y: -87}
+        - {x: 31.166687, y: -93}
+        - {x: 31.166687, y: -114}
+        - {x: 53.166687, y: -114}
+        - {x: 53.166687, y: -87}
+    - name: PenisHege
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.333374, y: 55}
+        - {x: -4.666626, y: 87}
+        - {x: -20.666626, y: 91}
+        - {x: -58.666626, y: 91}
+        - {x: -85.666626, y: 70}
+        - {x: -88.666626, y: 13}
+        - {x: -74.666626, y: -23}
+        - {x: -101.666626, y: -66}
+        - {x: -101.666626, y: -95}
+        - {x: -96.666626, y: -114}
+        - {x: 107.333374, y: -114}
+        - {x: 110.333374, y: -101}
+        - {x: 110.333374, y: -30}
+        - {x: 63.333374, y: 18}
+    - name: SmallHedge
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.611084, y: -21}
+        - {x: -67.611084, y: -30}
+        - {x: -67.611084, y: -114}
+        - {x: 71.388916, y: -114}
+        - {x: 73.388916, y: -110}
+        - {x: 73.388916, y: -91}
+        - {x: 20.388916, y: -21}
+    - name: CrackedPlatform
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 114.44446, y: 84}
+        - {x: 114.44446, y: 114}
+        - {x: -113.55554, y: 114}
+        - {x: -113.55554, y: 63}
+        - {x: -96.55554, y: 0}
+        - {x: -28.555542, y: -108}
+        - {x: -7.555542, y: -108}
+        - {x: 5.444458, y: -103}
+        - {x: 10.444458, y: -79}
+        - {x: 78.44446, y: -7}
+        - {x: 109.44446, y: 51}
+      - - {x: 30.444458, y: -35}
+        - {x: 12.444458, y: -52}
+        - {x: 12.444458, y: -86}
+        - {x: 20.444458, y: -89}
+        - {x: 25.444458, y: -89}
+        - {x: 31.444458, y: -87}
+        - {x: 50.444458, y: -75}
+        - {x: 50.444458, y: -48}
+        - {x: 46.444458, y: -35}
+      - - {x: 48.444458, y: -29}
+        - {x: 44.444458, y: -32}
+        - {x: 44.444458, y: -50}
+        - {x: 45.444458, y: -54}
+        - {x: 54.444458, y: -54}
+        - {x: 58.444458, y: -52}
+        - {x: 60.444458, y: -45}
+        - {x: 60.444458, y: -32}
+        - {x: 54.444458, y: -29}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
