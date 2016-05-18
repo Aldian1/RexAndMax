@@ -44,26 +44,29 @@ public class Enemy : MonoBehaviour {
     {
         if (Enemy_Type == EnemyType.mailbox)
         {
-			
-				if (transform.localScale.x == .5F) {
-					transform.Translate (-transform.right * Time.deltaTime * speed);
-				} else {
-					transform.Translate (transform.right * Time.deltaTime * speed);
-				
-			}
+
+            if (transform.localScale.x == .5F)
+            {
+                transform.Translate(-transform.right * Time.deltaTime * speed);
+            }
+            else
+            {
+                transform.Translate(transform.right * Time.deltaTime * speed);
+
+            }
         }
         if (Enemy_Type == EnemyType.flying)
         {
-            if (transform.eulerAngles.y < 180)
+            if (transform.localScale.x == .6F)
             {
-                transform.Translate(-transform.up * Time.deltaTime * speed);
+                transform.Translate(-transform.right * Time.deltaTime * speed);
             }
-            if (transform.eulerAngles.y >= 180)
+            else
             {
-                transform.Translate(transform.up * Time.deltaTime * speed);
-            }
+                transform.Translate(transform.right * Time.deltaTime * speed);
 
 
+            }
         }
     }
 
@@ -90,16 +93,39 @@ public class Enemy : MonoBehaviour {
 
     IEnumerator Refresh()
     {
-        yield return new WaitForSeconds(2);
-        //transform.Rotate(0, +180, 0);
-		if (transform.localScale.x == .5F) {
+        if (Enemy_Type == EnemyType.mailbox)
+        {
+            yield return new WaitForSeconds(2);
+            //transform.Rotate(0, +180, 0);
+            if (transform.localScale.x == .5F)
+            {
 
-			transform.localScale = new Vector3(-.5F,.5F,.5F);
-		} else {
-			transform.localScale = new Vector3(.5F,.5F,.5F);
-		}
+                transform.localScale = new Vector3(-.5F, .5F, .5F);
+            }
+            else
+            {
+                transform.localScale = new Vector3(.5F, .5F, .5F);
+            }
 
-        StartCoroutine("Refresh");
+            StartCoroutine("Refresh");
+        }
+
+        if (Enemy_Type == EnemyType.flying)
+        {
+            yield return new WaitForSeconds(2);
+            //transform.Rotate(0, +180, 0);
+            if (transform.localScale.x == .6F)
+            {
+
+                transform.localScale = new Vector3(-.6F, .6F, .6F);
+            }
+            else
+            {
+                transform.localScale = new Vector3(.6F, .6F, .6F);
+            }
+
+            StartCoroutine("Refresh");
+        }
     }
 
 

@@ -10,7 +10,7 @@ public class LevelController : MonoBehaviour {
 	public int deathcounter = 0;
 	public GameObject endoflevelMarker;
 
-	public GameObject endoflevelscreen,overlay,pausescreen;
+	public GameObject endoflevelscreen,overlay,pausescreen,Radial;
 
 	public GameObject[] stars;
 
@@ -100,6 +100,12 @@ public class LevelController : MonoBehaviour {
             Application.Quit();
         }
 
+        if(button.name == "Radial")
+        {
+            Time.timeScale = 0;
+            overlay.SetActive(false);
+            Radial.SetActive(true);
+        }
 
     }
 
