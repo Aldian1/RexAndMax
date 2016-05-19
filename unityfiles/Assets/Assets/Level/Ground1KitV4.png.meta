@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 39ead875584c1e541b731be29e42013d
+timeCreated: 1463660722
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: TopLeft_Plain
+    21300002: Top_Plain
+    21300004: TopRight_Plain
+    21300006: TopLeft_Indent
+    21300008: Top_Indent
+    21300010: TopRight_Indent
+    21300012: Left_Grass
+    21300014: Midd_Grass
+    21300016: Right_Grass
+    21300018: Left_Plain
+    21300020: Mid_Plain
+    21300022: Right_Plain
+    21300024: LEft_Indent
+    21300026: Mid_Indent
+    21300028: Right_Indent
+    21300030: 1_Indent
+    21300032: 2_Indent
+    21300034: Platform
+    21300036: BottomLeft_Plain
+    21300038: MidBottom_PLain
+    21300040: BottomRight_Plain
+    21300042: BottomLeft_Indent
+    21300044: Buttom_Indent
+    21300046: BottomRight_Indent
+    21300048: 1_Plain
+    21300050: 2_Plain
+    21300052: Grass_Platform
+    21300054: DirectionalSign
+    21300056: ButtonPad
+    21300058: Button
+    21300060: TopDoor
+    21300062: Spikes
+    21300064: CrackedDirt
+    21300066: LeverPad
+    21300068: BottomDoor
+    21300070: SignWriting
+    21300072: Lever
+    21300074: Box
+    21300076: BigBush
+    21300078: BigSpikeyBush
+    21300080: LittleSpikeBush
+    21300082: Tire
+    21300084: SmallBush
+    21300086: CrumbledPlatform
+    21300088: TopLeft_Vine
+    21300090: Top_Vine
+    21300092: TopRight_Vine
+    21300094: Sewer
+    21300096: Left_Vine
+    21300098: Middle_Vine
+    21300100: Right_Vine
+    21300102: SewerDirectional
+    21300104: BottomLeft_Vine
+    21300106: BottomMid_Vine
+    21300108: BottomRight_Vine
+    21300110: PlainTile
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: TopLeft_Plain
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 103.31909}
+        - {x: -102, y: -101.68091}
+        - {x: 102, y: -101.68091}
+        - {x: 102, y: 103.31909}
+    - name: Top_Plain
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: 103.31909}
+        - {x: -101.72223, y: -101.68091}
+        - {x: 103.27777, y: -101.68091}
+        - {x: 103.27777, y: 103.31909}
+    - name: TopRight_Plain
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.94446, y: 103.31909}
+        - {x: -101.94446, y: -101.68091}
+        - {x: 103.05554, y: -101.68091}
+        - {x: 103.05554, y: 103.31909}
+    - name: TopLeft_Indent
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.16669, y: 103.31909}
+        - {x: -102.16669, y: -101.68091}
+        - {x: 102.83331, y: -101.68091}
+        - {x: 102.83331, y: 103.31909}
+    - name: Top_Indent
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.388916, y: 103.31909}
+        - {x: -102.388916, y: -101.68091}
+        - {x: 102.611084, y: -101.68091}
+        - {x: 102.611084, y: 103.31909}
+    - name: TopRight_Indent
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.611084, y: 103.31909}
+        - {x: -101.611084, y: -101.68091}
+        - {x: 103.388916, y: -101.68091}
+        - {x: 103.388916, y: 103.31909}
+    - name: Left_Grass
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.833374, y: 103.31909}
+        - {x: -101.833374, y: -101.68091}
+        - {x: -39.833374, y: -101.68091}
+        - {x: 103.166626, y: -39.68091}
+        - {x: 103.166626, y: 103.31909}
+    - name: Midd_Grass
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.05554, y: 103.31909}
+        - {x: -102.05554, y: 33.31909}
+        - {x: 102.94446, y: 33.31909}
+        - {x: 102.94446, y: 103.31909}
+    - name: Right_Grass
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.27783, y: 103.31909}
+        - {x: -102.27783, y: 51.31909}
+        - {x: -87.27783, y: 33.31909}
+        - {x: 94.72217, y: 33.31909}
+        - {x: 102.72217, y: 42.31909}
+        - {x: 102.72217, y: 103.31909}
+    - name: Left_Plain
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 102.04138}
+        - {x: -102, y: -101.95862}
+        - {x: 102, y: -101.95862}
+        - {x: 102, y: 102.04138}
+    - name: Mid_Plain
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: 102.04138}
+        - {x: -101.72223, y: -101.95862}
+        - {x: 103.27777, y: -101.95862}
+        - {x: 103.27777, y: 102.04138}
+    - name: Right_Plain
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.94446, y: 102.04138}
+        - {x: -101.94446, y: -101.95862}
+        - {x: 103.05554, y: -101.95862}
+        - {x: 103.05554, y: 102.04138}
+    - name: LEft_Indent
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.16669, y: 102.04138}
+        - {x: -102.16669, y: -101.95862}
+        - {x: 102.83331, y: -101.95862}
+        - {x: 102.83331, y: 102.04138}
+    - name: Mid_Indent
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.388916, y: 102.04138}
+        - {x: -102.388916, y: -101.95862}
+        - {x: 102.611084, y: -101.95862}
+        - {x: 102.611084, y: 102.04138}
+    - name: Right_Indent
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.611084, y: 102.04138}
+        - {x: -101.611084, y: -101.95862}
+        - {x: 103.388916, y: -101.95862}
+        - {x: 103.388916, y: 102.04138}
+    - name: 1_Indent
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.833374, y: 102.04138}
+        - {x: -101.833374, y: -101.95862}
+        - {x: 103.166626, y: -101.95862}
+        - {x: 103.166626, y: 102.04138}
+    - name: 2_Indent
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.05554, y: 102.04138}
+        - {x: -102.05554, y: -101.95862}
+        - {x: 102.94446, y: -101.95862}
+        - {x: 102.94446, y: 102.04138}
+    - name: Platform
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 102.72217, y: 58.04138}
+        - {x: 102.72217, y: 102.04138}
+        - {x: -102.27783, y: 102.04138}
+        - {x: -102.27783, y: 52.04138}
+        - {x: -23.277832, y: -101.95862}
+        - {x: -4.277832, y: -101.95862}
+        - {x: 22.722168, y: -62.95862}
+        - {x: 67.72217, y: -19.958618}
+        - {x: 97.72217, y: 44.04138}
+    - name: BottomLeft_Plain
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 102.76355}
+        - {x: -102, y: -102.23645}
+        - {x: 102, y: -102.23645}
+        - {x: 102, y: 102.76355}
+    - name: MidBottom_PLain
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: 102.76355}
+        - {x: -101.72223, y: -102.23645}
+        - {x: 103.27777, y: -102.23645}
+        - {x: 103.27777, y: 102.76355}
+    - name: BottomRight_Plain
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.94446, y: 102.76355}
+        - {x: -101.94446, y: -102.23645}
+        - {x: 103.05554, y: -102.23645}
+        - {x: 103.05554, y: 102.76355}
+    - name: BottomLeft_Indent
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.16669, y: 102.76355}
+        - {x: -102.16669, y: -102.23645}
+        - {x: 102.83331, y: -102.23645}
+        - {x: 102.83331, y: 102.76355}
+    - name: Buttom_Indent
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.388916, y: 102.76355}
+        - {x: -102.388916, y: -102.23645}
+        - {x: 102.611084, y: -102.23645}
+        - {x: 102.611084, y: 102.76355}
+    - name: BottomRight_Indent
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.611084, y: 102.76355}
+        - {x: -101.611084, y: -102.23645}
+        - {x: 103.388916, y: -102.23645}
+        - {x: 103.388916, y: 102.76355}
+    - name: 1_Plain
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.833374, y: 102.76355}
+        - {x: -101.833374, y: -102.23645}
+        - {x: 103.166626, y: -102.23645}
+        - {x: 103.166626, y: 102.76355}
+    - name: 2_Plain
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.05554, y: 102.76355}
+        - {x: -102.05554, y: -102.23645}
+        - {x: 102.94446, y: -102.23645}
+        - {x: 102.94446, y: 102.76355}
+    - name: Grass_Platform
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.27783, y: 102.76355}
+        - {x: -102.27783, y: 38.76355}
+        - {x: -101.27783, y: 32.76355}
+        - {x: 95.72217, y: 32.76355}
+        - {x: 102.72217, y: 41.76355}
+        - {x: 102.72217, y: 102.76355}
+    - name: DirectionalSign
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 102.98572}
+        - {x: -102, y: -51.014282}
+        - {x: -41, y: -102.01428}
+        - {x: 40, y: -102.01428}
+        - {x: 102, y: 35.985718}
+        - {x: 102, y: 102.98572}
+    - name: ButtonPad
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: -50.014282}
+        - {x: -101.72223, y: -102.01428}
+        - {x: 103.27777, y: -102.01428}
+        - {x: 103.27777, y: -50.014282}
+      - - {x: -101.72223, y: 102.98572}
+        - {x: -101.72223, y: 99.98572}
+        - {x: 103.27777, y: 99.98572}
+        - {x: 103.27777, y: 102.98572}
+    - name: Button
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.94446, y: -102.01428}
+        - {x: -98.94446, y: -102.01428}
+        - {x: -98.94446, y: -53.014282}
+        - {x: -100.94446, y: -51.014282}
+        - {x: -101.94446, y: -51.014282}
+      - - {x: -88.94446, y: -31.014282}
+        - {x: -88.94446, y: -74.01428}
+        - {x: 90.05554, y: -74.01428}
+        - {x: 90.05554, y: -32.014282}
+        - {x: 87.05554, y: -31.014282}
+      - - {x: -101.94446, y: 102.98572}
+        - {x: -101.94446, y: 99.98572}
+        - {x: 103.05554, y: 99.98572}
+        - {x: 103.05554, y: 102.98572}
+    - name: TopDoor
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.16669, y: 102.98572}
+        - {x: -102.16669, y: 73.98572}
+        - {x: 18.833313, y: 59.985718}
+        - {x: 101.83331, y: 59.985718}
+        - {x: 102.83331, y: 62.985718}
+        - {x: 102.83331, y: 102.98572}
+    - name: Spikes
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 103.20801}
+        - {x: -8, y: 87.20801}
+        - {x: -84, y: 103.20801}
+        - {x: -102, y: 42.208008}
+        - {x: -102, y: -96.79199}
+        - {x: -98, y: -101.79199}
+        - {x: 92, y: -101.79199}
+        - {x: 102, y: -83.79199}
+        - {x: 102, y: 77.20801}
+        - {x: 80, y: 103.20801}
+    - name: CrackedDirt
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: 103.20801}
+        - {x: -101.72223, y: -101.79199}
+        - {x: 103.27777, y: -101.79199}
+        - {x: 103.27777, y: 103.20801}
+    - name: LeverPad
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35.944458, y: -30.791992}
+        - {x: -75.94446, y: -51.791992}
+        - {x: -98.94446, y: 103.20801}
+        - {x: -101.94446, y: 103.20801}
+        - {x: -101.94446, y: -101.79199}
+        - {x: 103.05554, y: -101.79199}
+        - {x: 103.05554, y: -70.79199}
+        - {x: 8.055542, y: -11.791992}
+    - name: BottomDoor
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100.16669, y: -58.791992}
+        - {x: -102.16669, y: -63.791992}
+        - {x: -102.16669, y: -101.79199}
+        - {x: 102.83331, y: -101.79199}
+        - {x: 102.83331, y: -67.79199}
+        - {x: -17.166687, y: -58.791992}
+    - name: SignWriting
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 102.94446, y: 103.20801}
+        - {x: -102.05554, y: 103.20801}
+        - {x: -102.05554, y: 6.208008}
+        - {x: -17.055542, y: 6.208008}
+        - {x: -17.055542, y: -93.79199}
+        - {x: -14.055542, y: -96.79199}
+        - {x: 14.944458, y: -96.79199}
+        - {x: 17.944458, y: -93.79199}
+        - {x: 17.944458, y: 6.208008}
+        - {x: 102.94446, y: 6.208008}
+    - name: Lever
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 81.43024}
+        - {x: -13, y: -73.56976}
+        - {x: 6, y: -73.56976}
+        - {x: 14, y: -64.56976}
+        - {x: 35, y: 40.430237}
+        - {x: 35, y: 81.43024}
+    - name: Box
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: 103.43024}
+        - {x: -101.72223, y: -101.56976}
+        - {x: 103.27777, y: -101.56976}
+        - {x: 103.27777, y: 103.43024}
+    - name: BigBush
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 91, y: -82.347534}
+        - {x: 91, y: 47.652466}
+        - {x: 62, y: 70.652466}
+        - {x: -48, y: 70.652466}
+        - {x: -97, y: -18.347534}
+        - {x: -97, y: -102.347534}
+        - {x: 91, y: -102.347534}
+        - {x: 91, y: -95.347534}
+        - {x: 90, y: -91.347534}
+    - name: BigSpikeyBush
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.72223, y: -19.347534}
+        - {x: -60.72223, y: -24.347534}
+        - {x: -88.72223, y: -71.347534}
+        - {x: -88.72223, y: -102.347534}
+        - {x: 86.27777, y: -102.347534}
+        - {x: 86.27777, y: -65.347534}
+        - {x: 48.27777, y: -19.347534}
+      - - {x: -101.72223, y: 102.652466}
+        - {x: -101.72223, y: 99.652466}
+        - {x: 103.27777, y: 99.652466}
+        - {x: 103.27777, y: 102.652466}
+    - name: LittleSpikeBush
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.944458, y: -61.347534}
+        - {x: -26.944458, y: -61.347534}
+        - {x: -39.944458, y: -85.347534}
+        - {x: -39.944458, y: -95.347534}
+        - {x: -37.944458, y: -102.347534}
+        - {x: 41.055542, y: -102.347534}
+        - {x: 42.055542, y: -97.347534}
+        - {x: 42.055542, y: -83.347534}
+        - {x: 30.055542, y: -66.347534}
+    - name: Tire
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81.83331, y: 6.652466}
+        - {x: -53.166687, y: 6.652466}
+        - {x: -89.16669, y: -9.347534}
+        - {x: -89.16669, y: -100.347534}
+        - {x: -85.16669, y: -102.347534}
+        - {x: 102.83331, y: -102.347534}
+        - {x: 102.83331, y: -55.347534}
+        - {x: 86.83331, y: 1.6524658}
+      - - {x: 44.833313, y: -78.347534}
+        - {x: 38.833313, y: -78.347534}
+        - {x: 29.833313, y: -87.347534}
+        - {x: 27.833313, y: -102.347534}
+        - {x: 47.833313, y: -102.347534}
+        - {x: 47.833313, y: -79.347534}
+    - name: SmallBush
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36.055542, y: -18.347534}
+        - {x: -50.055542, y: -49.347534}
+        - {x: -61.055542, y: -80.347534}
+        - {x: -61.055542, y: -100.347534}
+        - {x: -60.055542, y: -102.347534}
+        - {x: 64.94446, y: -102.347534}
+        - {x: 65.94446, y: -99.347534}
+        - {x: 65.94446, y: -80.347534}
+        - {x: 15.944458, y: -18.347534}
+    - name: CrumbledPlatform
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.27783, y: 102.652466}
+        - {x: -102.27783, y: -21.347534}
+        - {x: -31.277832, y: -97.347534}
+        - {x: 24.722168, y: -97.347534}
+        - {x: 98.72217, y: 47.652466}
+        - {x: 102.72217, y: 78.652466}
+        - {x: 102.72217, y: 102.652466}
+      - - {x: 22.722168, y: -32.347534}
+        - {x: 10.722168, y: -49.347534}
+        - {x: 10.722168, y: -73.347534}
+        - {x: 13.722168, y: -80.347534}
+        - {x: 41.722168, y: -80.347534}
+        - {x: 45.722168, y: -72.347534}
+        - {x: 45.722168, y: -36.347534}
+        - {x: 37.722168, y: -32.347534}
+      - - {x: 48.722168, y: -26.347534}
+        - {x: 43.722168, y: -26.347534}
+        - {x: 38.722168, y: -31.347534}
+        - {x: 38.722168, y: -47.347534}
+        - {x: 42.722168, y: -49.347534}
+        - {x: 48.722168, y: -49.347534}
+        - {x: 52.722168, y: -44.347534}
+        - {x: 53.722168, y: -38.347534}
+        - {x: 53.722168, y: -28.347534}
+    - name: TopLeft_Vine
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 102.874664}
+        - {x: -102, y: -102.125336}
+        - {x: 102, y: -102.125336}
+        - {x: 102, y: 102.874664}
+    - name: Top_Vine
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: 102.874664}
+        - {x: -101.72223, y: -102.125336}
+        - {x: 103.27777, y: -102.125336}
+        - {x: 103.27777, y: 102.874664}
+    - name: TopRight_Vine
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.94446, y: 102.874664}
+        - {x: -101.94446, y: -102.125336}
+        - {x: 103.05554, y: -102.125336}
+        - {x: 103.05554, y: 102.874664}
+    - name: Sewer
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.16669, y: 102.874664}
+        - {x: -102.16669, y: -102.125336}
+        - {x: 102.83331, y: -102.125336}
+        - {x: 102.83331, y: 102.874664}
+    - name: Left_Vine
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 103.09689}
+        - {x: -102, y: -101.90311}
+        - {x: 102, y: -101.90311}
+        - {x: 102, y: 103.09689}
+    - name: Middle_Vine
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: 103.09689}
+        - {x: -101.72223, y: -101.90311}
+        - {x: 103.27777, y: -101.90311}
+        - {x: 103.27777, y: 103.09689}
+    - name: Right_Vine
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.94446, y: 103.09689}
+        - {x: -101.94446, y: -101.90311}
+        - {x: 103.05554, y: -101.90311}
+        - {x: 103.05554, y: 103.09689}
+    - name: SewerDirectional
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.16669, y: 103.09689}
+        - {x: -102.16669, y: -101.90311}
+        - {x: 102.83331, y: -101.90311}
+        - {x: 102.83331, y: 103.09689}
+    - name: BottomLeft_Vine
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 103.319115}
+        - {x: -102, y: -101.680885}
+        - {x: 102, y: -101.680885}
+        - {x: 102, y: 103.319115}
+    - name: BottomMid_Vine
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: 103.319115}
+        - {x: -101.72223, y: -101.680885}
+        - {x: 103.27777, y: -101.680885}
+        - {x: 103.27777, y: 103.319115}
+    - name: BottomRight_Vine
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.94446, y: 103.319115}
+        - {x: -101.94446, y: -101.680885}
+        - {x: 103.05554, y: -101.680885}
+        - {x: 103.05554, y: 103.319115}
+    - name: PlainTile
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.16669, y: 103.319115}
+        - {x: -102.16669, y: -101.680885}
+        - {x: 102.83331, y: -101.680885}
+        - {x: 102.83331, y: 103.319115}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

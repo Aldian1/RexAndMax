@@ -35,8 +35,10 @@ public class Player_Controller : MonoBehaviour
 
     public GameObject gorilla;
 
-    float direction;
+   public float direction;
 
+    public bool InCombat;
+    private int attackframe;
 
     // Use this for initialization
     void Start()
@@ -58,30 +60,35 @@ public class Player_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (keyboardcontrols)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
+       
+       // if (!InCombat)
+       // {
+		if (keyboardcontrols) {
+			if (Input.GetKeyDown (KeyCode.Space)) {
+				if (onground == true) {
+					//Debug.Log ("jump");
+					onground = false;
+					rb.AddForce (Vector2.up * Jumpower);
+					Debug.DrawRay (transform.position, -Vector2.up * 2.5F, Color.red);
+
+					return;
+				}
+			}
+		}
+          //  }
+            Controls();
+
+
+
+            if (onground == false)
             {
-                //Debug.Log ("jump");
-                onground = false;
-                rb.AddForce(Vector2.up * Jumpower);
-                Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.red);
-                
-                return;
+                Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.green);
+
+                //  Debug.Log(Vector2.Distance(hit_.transform.position, transform.position));
+
             }
         }
-        Controls();
-     
-
-       
-        if (onground == false)
-        {
-            Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.green);
-
-            //  Debug.Log(Vector2.Distance(hit_.transform.position, transform.position));
-
-        }
-    }
+    
 
     void OnCollisionEnter2D(Collision2D col)
     {
@@ -148,7 +155,7 @@ public class Player_Controller : MonoBehaviour
     {
         if (onground == true)
         {
-            if (Input.GetKeyDown(KeyCode.Space) || active == true)
+            if (active == true)
             {
                 //Debug.Log ("jump");
                 onground = false;
@@ -164,23 +171,7 @@ public class Player_Controller : MonoBehaviour
 
 
 
-    public void UpdateHealth(float damage)
-    {
    
-		if (!invincible) {
-			GameObject.Find ("Health_Max").GetComponent<HealthListener> ().updatehealth (damage);
-			if (transform.rotation.y == 180) {
-				rb.AddForce (new Vector2 (1, 1) * 600);
-			}
-			if (transform.rotation.y == 0) {
-				rb.AddForce (new Vector2 (-1, 1) * 600);
-			}
-            
-			invincible = true;
-			StartCoroutine ("Invincible");
-			return;
-		}
-    }
 	#region movement
     public void Controls()
     {
@@ -239,6 +230,27 @@ public class Player_Controller : MonoBehaviour
       
     }
     #endregion
+
+    public void UpdateHealth(float damage)
+    {
+
+        if (!invincible)
+        {
+            GameObject.Find("Health_Max").GetComponent<HealthListener>().updatehealth(damage);
+            if (transform.rotation.y == 180)
+            {
+                rb.AddForce(new Vector2(1, 1) * 600);
+            }
+            if (transform.rotation.y == 0)
+            {
+                rb.AddForce(new Vector2(-1, 1) * 600);
+            }
+
+            invincible = true;
+            StartCoroutine("Invincible");
+            return;
+        }
+    }
 
     void GorillaMode()
 	{
