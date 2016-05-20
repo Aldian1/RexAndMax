@@ -23,7 +23,7 @@ public class Player_Controller : MonoBehaviour
     public bool onground;
 
     private GameObject debugger;
-    public GameObject balloon;
+
 
     public bool invincible;
 
@@ -66,14 +66,17 @@ public class Player_Controller : MonoBehaviour
 		if (keyboardcontrols) {
 			if (Input.GetKeyDown (KeyCode.Space)) {
 				if (onground == true) {
-					//Debug.Log ("jump");
-					onground = false;
+                    AR.SetBool("Jump", true);
+                    //Debug.Log ("jump");
+                    onground = false;
 					rb.AddForce (Vector2.up * Jumpower);
 					Debug.DrawRay (transform.position, -Vector2.up * 2.5F, Color.red);
+                   
 
-					return;
+                    return;
 				}
-			}
+                
+            }
 		}
           //  }
             Controls();
@@ -103,6 +106,7 @@ public class Player_Controller : MonoBehaviour
         if (col.transform.tag == "Ground")
         {
             onground = true;
+            AR.SetBool("Jump", false);
         }
 
     }
@@ -111,7 +115,7 @@ public class Player_Controller : MonoBehaviour
         if (onground == true)
             if (col.transform.tag == "Ground")
             {
-
+               
                 onground = false;
                 OnCollisionEnter2D(col);
                 return;
@@ -133,11 +137,7 @@ public class Player_Controller : MonoBehaviour
 
     public void GetItem(ItemDetection.Items item)
     {
-        if (item == ItemDetection.Items.BalloonPowerup)
-        {
-            balloon.SetActive(true);
-            rb.gravityScale = -.2F;
-        }
+       
 
         if (item == ItemDetection.Items.Stars)
         {
@@ -159,6 +159,7 @@ public class Player_Controller : MonoBehaviour
             {
                 //Debug.Log ("jump");
                 onground = false;
+                AR.SetBool("Jump", true);
                 rb.AddForce(Vector2.up * Jumpower);
                 Debug.DrawRay(transform.position, -Vector2.up * 2.5F, Color.red);
                 active = false;
@@ -175,6 +176,11 @@ public class Player_Controller : MonoBehaviour
 	#region movement
     public void Controls()
     {
+        if(AR.GetBool("Jump") == true)
+        {
+            AR.SetBool("Jump", false);
+        }
+
         if (keyboardcontrols == true)
         {
             float i = Input.GetAxis("Horizontal");
@@ -182,11 +188,7 @@ public class Player_Controller : MonoBehaviour
             AR.SetFloat("Run", i);
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse1) && balloon.activeSelf == true)
-        {
-            balloon.SetActive(false);
-            rb.gravityScale = 2.5F;
-        }
+       
 
             if (Input.GetKey(KeyCode.D) || direction > 0)
             {
