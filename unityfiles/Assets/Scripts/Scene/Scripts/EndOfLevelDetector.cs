@@ -4,16 +4,17 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class EndOfLevelDetector : MonoBehaviour {
 
-	public int nextleveltoload;
 
-	public GameObject[] stars;
 
-    public bool maxpresent;
-    public bool rexpresent;
+	public GameObject levelover;
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
-
+		if (col.tag == "Player") {
+			levelover.SetActive (true);
+		}
+	}
+		/*
 
         if(col.transform.tag == "Player")
             {
@@ -57,4 +58,5 @@ public class EndOfLevelDetector : MonoBehaviour {
 
 		}
 	}
+	*/
 }

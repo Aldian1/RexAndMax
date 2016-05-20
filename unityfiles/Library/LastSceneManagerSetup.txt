@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Recover.unity
+- path: Assets/Mr_1_1_Debug.unity
   isLoaded: 1
   isActive: 1
