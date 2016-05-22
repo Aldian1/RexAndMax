@@ -19,6 +19,7 @@ public class Enemy : MonoBehaviour {
 
     private Animator rex;
 
+	public float refreshrate;
     
 
     // Use this for initialization
@@ -95,7 +96,7 @@ public class Enemy : MonoBehaviour {
     {
         if (Enemy_Type == EnemyType.mailbox)
         {
-            yield return new WaitForSeconds(2);
+			yield return new WaitForSeconds(refreshrate);
             //transform.Rotate(0, +180, 0);
             if (transform.localScale.x == .5F)
             {
@@ -112,7 +113,7 @@ public class Enemy : MonoBehaviour {
 
         if (Enemy_Type == EnemyType.flying)
         {
-            yield return new WaitForSeconds(2);
+			yield return new WaitForSeconds(refreshrate);
             //transform.Rotate(0, +180, 0);
             if (transform.localScale.x == .6F)
             {
@@ -150,13 +151,21 @@ public class Enemy : MonoBehaviour {
 
     public void Combat()
     {
-		if (rex.GetCurrentAnimatorStateInfo (0).IsName ("Atk1") || rex.GetCurrentAnimatorStateInfo(0).IsName("Atk2") || rex.GetCurrentAnimatorStateInfo(0).IsName("Atk3")) {
-			GetComponent<Rigidbody2D>().AddForce(Vector2.up * 800);
-			Effect(smokecloud);
-			CancelInvoke ("Combat");
-			return;
+		if (Enemy_Type == EnemyType.mailbox) {
+			if (rex.GetCurrentAnimatorStateInfo (0).IsName ("Atk1") || rex.GetCurrentAnimatorStateInfo (0).IsName ("Atk2") || rex.GetCurrentAnimatorStateInfo (0).IsName ("Atk3")) {
+				GetComponent<Rigidbody2D> ().AddForce (Vector2.up * 800);
+				Effect (smokecloud);
+				CancelInvoke ("Combat");
+				return;
+			}
 		}
-        
-
+		if (Enemy_Type == EnemyType.flying) {
+			if (rex.GetCurrentAnimatorStateInfo (0).IsName ("Atk1")) {
+				
+				GameObject go = transform.Find ("Box").gameObject;
+				CancelInvoke ("Combat");
+				return;
+			}
+		}
     }
 }
