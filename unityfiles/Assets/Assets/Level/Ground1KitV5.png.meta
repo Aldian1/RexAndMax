@@ -1,0 +1,1517 @@
+fileFormatVersion: 2
+guid: 39e7097763e4fce48a4d586b8e89ddbb
+timeCreated: 1464010247
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Ground1KitV5_0
+    21300002: Ground1KitV5_1
+    21300004: Ground1KitV5_2
+    21300006: Ground1KitV5_3
+    21300008: Ground1KitV5_4
+    21300010: Ground1KitV5_5
+    21300012: Ground1KitV5_6
+    21300014: Ground1KitV5_7
+    21300016: Ground1KitV5_8
+    21300018: Ground1KitV5_9
+    21300020: Ground1KitV5_10
+    21300022: Ground1KitV5_11
+    21300024: Ground1KitV5_12
+    21300026: Ground1KitV5_13
+    21300028: Ground1KitV5_14
+    21300030: Ground1KitV5_15
+    21300032: Ground1KitV5_16
+    21300034: Ground1KitV5_17
+    21300036: Ground1KitV5_18
+    21300038: Ground1KitV5_19
+    21300040: Ground1KitV5_20
+    21300042: Ground1KitV5_21
+    21300044: Ground1KitV5_22
+    21300046: Ground1KitV5_23
+    21300048: Ground1KitV5_24
+    21300050: Ground1KitV5_25
+    21300052: Ground1KitV5_26
+    21300054: Ground1KitV5_27
+    21300056: Ground1KitV5_28
+    21300058: Ground1KitV5_29
+    21300060: Ground1KitV5_30
+    21300062: Ground1KitV5_31
+    21300064: Ground1KitV5_32
+    21300066: Ground1KitV5_33
+    21300068: Ground1KitV5_34
+    21300070: Ground1KitV5_35
+    21300072: Ground1KitV5_36
+    21300074: Ground1KitV5_37
+    21300076: Ground1KitV5_38
+    21300078: Ground1KitV5_39
+    21300080: Ground1KitV5_40
+    21300082: Ground1KitV5_41
+    21300084: Ground1KitV5_42
+    21300086: Ground1KitV5_43
+    21300088: Ground1KitV5_44
+    21300090: Ground1KitV5_45
+    21300092: Ground1KitV5_46
+    21300094: Ground1KitV5_47
+    21300096: Ground1KitV5_48
+    21300098: Ground1KitV5_49
+    21300100: Ground1KitV5_50
+    21300102: Ground1KitV5_51
+    21300104: Ground1KitV5_52
+    21300106: Ground1KitV5_53
+    21300108: Ground1KitV5_54
+    21300110: Ground1KitV5_55
+    21300112: Ground1KitV5_56
+    21300114: Ground1KitV5_57
+    21300116: Ground1KitV5_58
+    21300118: Ground1KitV5_59
+    21300120: Ground1KitV5_60
+    21300122: Ground1KitV5_61
+    21300124: Ground1KitV5_62
+    21300126: Ground1KitV5_63
+    21300128: Ground1KitV5_64
+    21300130: Ground1KitV5_65
+    21300132: Ground1KitV5_66
+    21300134: Ground1KitV5_67
+    21300136: Ground1KitV5_68
+    21300138: Ground1KitV5_69
+    21300140: Ground1KitV5_70
+    21300142: Ground1KitV5_71
+    21300144: Ground1KitV5_72
+    21300146: Ground1KitV5_73
+    21300148: Ground1KitV5_74
+    21300150: Ground1KitV5_75
+    21300152: Ground1KitV5_76
+    21300154: Ground1KitV5_77
+    21300156: Ground1KitV5_78
+    21300158: Ground1KitV5_79
+    21300160: Ground1KitV5_80
+    21300162: Ground1KitV5_81
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Ground1KitV5_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 103.31909}
+        - {x: -102, y: -101.68091}
+        - {x: 102, y: -101.68091}
+        - {x: 102, y: 103.31909}
+    - name: Ground1KitV5_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: 103.31909}
+        - {x: -101.72223, y: -101.68091}
+        - {x: 103.27777, y: -101.68091}
+        - {x: 103.27777, y: 103.31909}
+    - name: Ground1KitV5_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.94446, y: 103.31909}
+        - {x: -101.94446, y: -101.68091}
+        - {x: 103.05554, y: -101.68091}
+        - {x: 103.05554, y: 103.31909}
+    - name: Ground1KitV5_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.16669, y: 103.31909}
+        - {x: -102.16669, y: -101.68091}
+        - {x: 102.83331, y: -101.68091}
+        - {x: 102.83331, y: 103.31909}
+    - name: Ground1KitV5_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.388916, y: 103.31909}
+        - {x: -102.388916, y: -101.68091}
+        - {x: 102.611084, y: -101.68091}
+        - {x: 102.611084, y: 103.31909}
+    - name: Ground1KitV5_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.611084, y: 103.31909}
+        - {x: -101.611084, y: -101.68091}
+        - {x: 103.388916, y: -101.68091}
+        - {x: 103.388916, y: 103.31909}
+    - name: Ground1KitV5_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.833374, y: 103.31909}
+        - {x: -101.833374, y: -101.68091}
+        - {x: -39.833374, y: -101.68091}
+        - {x: 103.166626, y: -39.68091}
+        - {x: 103.166626, y: 103.31909}
+    - name: Ground1KitV5_7
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.05554, y: 103.31909}
+        - {x: -102.05554, y: 33.31909}
+        - {x: 102.94446, y: 33.31909}
+        - {x: 102.94446, y: 103.31909}
+    - name: Ground1KitV5_8
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 4502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.27783, y: 103.31909}
+        - {x: -102.27783, y: 51.31909}
+        - {x: -87.27783, y: 33.31909}
+        - {x: 94.72217, y: 33.31909}
+        - {x: 102.72217, y: 42.31909}
+        - {x: 102.72217, y: 103.31909}
+    - name: Ground1KitV5_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 102.04138}
+        - {x: -102, y: -101.95862}
+        - {x: 102, y: -101.95862}
+        - {x: 102, y: 102.04138}
+    - name: Ground1KitV5_10
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: 102.04138}
+        - {x: -101.72223, y: -101.95862}
+        - {x: 103.27777, y: -101.95862}
+        - {x: 103.27777, y: 102.04138}
+    - name: Ground1KitV5_11
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.94446, y: 102.04138}
+        - {x: -101.94446, y: -101.95862}
+        - {x: 103.05554, y: -101.95862}
+        - {x: 103.05554, y: 102.04138}
+    - name: Ground1KitV5_12
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.16669, y: 102.04138}
+        - {x: -102.16669, y: -101.95862}
+        - {x: 102.83331, y: -101.95862}
+        - {x: 102.83331, y: 102.04138}
+    - name: Ground1KitV5_13
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.388916, y: 102.04138}
+        - {x: -102.388916, y: -101.95862}
+        - {x: 102.611084, y: -101.95862}
+        - {x: 102.611084, y: 102.04138}
+    - name: Ground1KitV5_14
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.611084, y: 102.04138}
+        - {x: -101.611084, y: -101.95862}
+        - {x: 103.388916, y: -101.95862}
+        - {x: 103.388916, y: 102.04138}
+    - name: Ground1KitV5_15
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.833374, y: 102.04138}
+        - {x: -101.833374, y: -101.95862}
+        - {x: 103.166626, y: -101.95862}
+        - {x: 103.166626, y: 102.04138}
+    - name: Ground1KitV5_16
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.05554, y: 102.04138}
+        - {x: -102.05554, y: -101.95862}
+        - {x: 102.94446, y: -101.95862}
+        - {x: 102.94446, y: 102.04138}
+    - name: Ground1KitV5_17
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 4002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 102.72217, y: 58.04138}
+        - {x: 102.72217, y: 102.04138}
+        - {x: -102.27783, y: 102.04138}
+        - {x: -102.27783, y: 52.04138}
+        - {x: -23.277832, y: -101.95862}
+        - {x: -4.277832, y: -101.95862}
+        - {x: 22.722168, y: -62.95862}
+        - {x: 67.72217, y: -19.958618}
+        - {x: 97.72217, y: 44.04138}
+    - name: Ground1KitV5_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 102.76355}
+        - {x: -102, y: -102.23645}
+        - {x: 102, y: -102.23645}
+        - {x: 102, y: 102.76355}
+    - name: Ground1KitV5_19
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: 102.76355}
+        - {x: -101.72223, y: -102.23645}
+        - {x: 103.27777, y: -102.23645}
+        - {x: 103.27777, y: 102.76355}
+    - name: Ground1KitV5_20
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.94446, y: 102.76355}
+        - {x: -101.94446, y: -102.23645}
+        - {x: 103.05554, y: -102.23645}
+        - {x: 103.05554, y: 102.76355}
+    - name: Ground1KitV5_21
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.16669, y: 102.76355}
+        - {x: -102.16669, y: -102.23645}
+        - {x: 102.83331, y: -102.23645}
+        - {x: 102.83331, y: 102.76355}
+    - name: Ground1KitV5_22
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.388916, y: 102.76355}
+        - {x: -102.388916, y: -102.23645}
+        - {x: 102.611084, y: -102.23645}
+        - {x: 102.611084, y: 102.76355}
+    - name: Ground1KitV5_23
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.611084, y: 102.76355}
+        - {x: -101.611084, y: -102.23645}
+        - {x: 103.388916, y: -102.23645}
+        - {x: 103.388916, y: 102.76355}
+    - name: Ground1KitV5_24
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.833374, y: 102.76355}
+        - {x: -101.833374, y: -102.23645}
+        - {x: 103.166626, y: -102.23645}
+        - {x: 103.166626, y: 102.76355}
+    - name: Ground1KitV5_25
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.05554, y: 102.76355}
+        - {x: -102.05554, y: -102.23645}
+        - {x: 102.94446, y: -102.23645}
+        - {x: 102.94446, y: 102.76355}
+    - name: Ground1KitV5_26
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.27783, y: 102.76355}
+        - {x: -102.27783, y: 38.76355}
+        - {x: -101.27783, y: 32.76355}
+        - {x: 95.72217, y: 32.76355}
+        - {x: 102.72217, y: 41.76355}
+        - {x: 102.72217, y: 102.76355}
+    - name: Ground1KitV5_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 102.98572}
+        - {x: -102, y: -51.014282}
+        - {x: -41, y: -102.01428}
+        - {x: 40, y: -102.01428}
+        - {x: 102, y: 35.985718}
+        - {x: 102, y: 102.98572}
+    - name: Ground1KitV5_28
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: -50.014282}
+        - {x: -101.72223, y: -102.01428}
+        - {x: 103.27777, y: -102.01428}
+        - {x: 103.27777, y: -50.014282}
+      - - {x: -101.72223, y: 102.98572}
+        - {x: -101.72223, y: 99.98572}
+        - {x: 103.27777, y: 99.98572}
+        - {x: 103.27777, y: 102.98572}
+    - name: Ground1KitV5_29
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.94446, y: -102.01428}
+        - {x: -98.94446, y: -102.01428}
+        - {x: -98.94446, y: -53.014282}
+        - {x: -100.94446, y: -51.014282}
+        - {x: -101.94446, y: -51.014282}
+      - - {x: -88.94446, y: -31.014282}
+        - {x: -88.94446, y: -74.01428}
+        - {x: 90.05554, y: -74.01428}
+        - {x: 90.05554, y: -32.014282}
+        - {x: 87.05554, y: -31.014282}
+      - - {x: -101.94446, y: 102.98572}
+        - {x: -101.94446, y: 99.98572}
+        - {x: 103.05554, y: 99.98572}
+        - {x: 103.05554, y: 102.98572}
+    - name: Ground1KitV5_30
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.16669, y: 102.98572}
+        - {x: -102.16669, y: 73.98572}
+        - {x: 18.833313, y: 59.985718}
+        - {x: 101.83331, y: 59.985718}
+        - {x: 102.83331, y: 62.985718}
+        - {x: 102.83331, y: 102.98572}
+    - name: Ground1KitV5_31
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.388916, y: 102.98572}
+        - {x: -102.388916, y: 67.98572}
+        - {x: -99.388916, y: 68.98572}
+        - {x: -40.388916, y: -35.014282}
+        - {x: -102.388916, y: -100.01428}
+        - {x: -102.388916, y: -102.01428}
+        - {x: 102.611084, y: -102.01428}
+        - {x: 102.611084, y: 102.98572}
+    - name: Ground1KitV5_32
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.611084, y: 102.98572}
+        - {x: -101.611084, y: -102.01428}
+        - {x: 103.388916, y: -102.01428}
+        - {x: 103.388916, y: 102.98572}
+    - name: Ground1KitV5_33
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 103.166626, y: 99.98572}
+        - {x: 103.166626, y: 102.98572}
+        - {x: -101.833374, y: 102.98572}
+        - {x: -101.833374, y: -102.01428}
+        - {x: 103.166626, y: -102.01428}
+        - {x: 103.166626, y: -99.01428}
+        - {x: -95.833374, y: 99.98572}
+    - name: Ground1KitV5_34
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 3002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.05554, y: 102.98572}
+        - {x: -102.05554, y: -102.01428}
+        - {x: 102.94446, y: -102.01428}
+        - {x: 102.94446, y: 102.98572}
+    - name: Ground1KitV5_35
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -98.27783, y: -102.01428}
+        - {x: -98.27783, y: 102.98572}
+        - {x: -102.27783, y: 102.98572}
+        - {x: -102.27783, y: -102.01428}
+    - name: Ground1KitV5_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 103.20801}
+        - {x: -8, y: 87.20801}
+        - {x: -84, y: 103.20801}
+        - {x: -102, y: 42.208008}
+        - {x: -102, y: -96.79199}
+        - {x: -98, y: -101.79199}
+        - {x: 92, y: -101.79199}
+        - {x: 102, y: -83.79199}
+        - {x: 102, y: 77.20801}
+        - {x: 80, y: 103.20801}
+    - name: Ground1KitV5_37
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: 103.20801}
+        - {x: -101.72223, y: -101.79199}
+        - {x: 103.27777, y: -101.79199}
+        - {x: 103.27777, y: 103.20801}
+    - name: Ground1KitV5_38
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35.944458, y: -30.791992}
+        - {x: -75.94446, y: -51.791992}
+        - {x: -98.94446, y: 103.20801}
+        - {x: -101.94446, y: 103.20801}
+        - {x: -101.94446, y: -101.79199}
+        - {x: 103.05554, y: -101.79199}
+        - {x: 103.05554, y: -70.79199}
+        - {x: 8.055542, y: -11.791992}
+    - name: Ground1KitV5_39
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100.16669, y: -58.791992}
+        - {x: -102.16669, y: -63.791992}
+        - {x: -102.16669, y: -101.79199}
+        - {x: 102.83331, y: -101.79199}
+        - {x: 102.83331, y: -67.79199}
+        - {x: -17.166687, y: -58.791992}
+    - name: Ground1KitV5_40
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.388916, y: -101.79199}
+        - {x: -99.388916, y: -101.79199}
+        - {x: -99.388916, y: -74.79199}
+        - {x: -101.388916, y: -72.79199}
+        - {x: -102.388916, y: -72.79199}
+      - - {x: -2.388916, y: 103.20801}
+        - {x: -2.388916, y: -101.79199}
+        - {x: 102.611084, y: -101.79199}
+        - {x: 102.611084, y: 103.20801}
+    - name: Ground1KitV5_41
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.611084, y: 103.20801}
+        - {x: -101.611084, y: -101.79199}
+        - {x: 103.388916, y: -101.79199}
+        - {x: 103.388916, y: 103.20801}
+    - name: Ground1KitV5_42
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.166626, y: -101.79199}
+        - {x: 3.166626, y: 103.20801}
+        - {x: -101.833374, y: 103.20801}
+        - {x: -101.833374, y: -101.79199}
+    - name: Ground1KitV5_43
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 102.94446, y: 103.20801}
+        - {x: -102.05554, y: 103.20801}
+        - {x: -102.05554, y: 6.208008}
+        - {x: -17.055542, y: 6.208008}
+        - {x: -17.055542, y: -93.79199}
+        - {x: -14.055542, y: -96.79199}
+        - {x: 14.944458, y: -96.79199}
+        - {x: 17.944458, y: -93.79199}
+        - {x: 17.944458, y: 6.208008}
+        - {x: 102.94446, y: 6.208008}
+    - name: Ground1KitV5_44
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 59.722168, y: 103.20801}
+        - {x: 43.722168, y: 103.20801}
+        - {x: 38.722168, y: 97.20801}
+        - {x: 5.722168, y: 59.208008}
+        - {x: -35.277832, y: 101.20801}
+        - {x: -43.277832, y: 103.20801}
+        - {x: -57.277832, y: 103.20801}
+        - {x: -96.27783, y: 54.208008}
+        - {x: -102.27783, y: 42.208008}
+        - {x: -102.27783, y: -101.79199}
+        - {x: 102.72217, y: -101.79199}
+        - {x: 102.72217, y: 43.208008}
+        - {x: 92.72217, y: 62.208008}
+      - - {x: -3.277832, y: 71.20801}
+        - {x: 0.72216797, y: 65.20801}
+        - {x: 3.722168, y: 65.20801}
+        - {x: 3.722168, y: 77.20801}
+        - {x: -0.27783203, y: 78.20801}
+        - {x: -3.277832, y: 77.20801}
+    - name: Ground1KitV5_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 81.43024}
+        - {x: -13, y: -73.56976}
+        - {x: 6, y: -73.56976}
+        - {x: 14, y: -64.56976}
+        - {x: 35, y: 40.430237}
+        - {x: 35, y: 81.43024}
+    - name: Ground1KitV5_46
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: 103.43024}
+        - {x: -101.72223, y: -101.56976}
+        - {x: 103.27777, y: -101.56976}
+        - {x: 103.27777, y: 103.43024}
+    - name: Ground1KitV5_47
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -98.94446, y: -101.56976}
+        - {x: -98.94446, y: 103.43024}
+        - {x: -101.94446, y: 103.43024}
+        - {x: -101.94446, y: -101.56976}
+    - name: Ground1KitV5_48
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ground1KitV5_49
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.388916, y: 103.43024}
+        - {x: -2.388916, y: -101.56976}
+        - {x: 102.611084, y: -101.56976}
+        - {x: 102.611084, y: 103.43024}
+    - name: Ground1KitV5_50
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.611084, y: 103.43024}
+        - {x: -101.611084, y: -101.56976}
+        - {x: 103.388916, y: -101.56976}
+        - {x: 103.388916, y: 103.43024}
+    - name: Ground1KitV5_51
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.166626, y: -101.56976}
+        - {x: 3.166626, y: 103.43024}
+        - {x: -101.833374, y: 103.43024}
+        - {x: -101.833374, y: -101.56976}
+    - name: Ground1KitV5_52
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40.944458, y: 103.43024}
+        - {x: 28.944458, y: 84.43024}
+        - {x: 14.944458, y: 64.43024}
+        - {x: -8.055542, y: 79.43024}
+        - {x: -44.055542, y: 103.43024}
+        - {x: -61.055542, y: 103.43024}
+        - {x: -70.05554, y: 89.43024}
+        - {x: -102.05554, y: 46.430237}
+        - {x: -102.05554, y: -101.56976}
+        - {x: 102.94446, y: -101.56976}
+        - {x: 102.94446, y: 51.430237}
+        - {x: 61.944458, y: 103.43024}
+      - - {x: -0.055541992, y: 64.43024}
+        - {x: 1.944458, y: 62.430237}
+        - {x: 4.944458, y: 63.430237}
+        - {x: 4.944458, y: 68.43024}
+        - {x: 2.944458, y: 70.43024}
+        - {x: -0.055541992, y: 69.43024}
+      - - {x: -3.055542, y: 71.43024}
+        - {x: -1.055542, y: 69.43024}
+        - {x: 1.944458, y: 70.43024}
+        - {x: 1.944458, y: 77.43024}
+        - {x: -0.055541992, y: 79.43024}
+        - {x: -3.055542, y: 78.43024}
+    - name: Ground1KitV5_53
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.27783, y: 103.43024}
+        - {x: -102.27783, y: -101.56976}
+        - {x: 102.72217, y: -101.56976}
+        - {x: 102.72217, y: 103.43024}
+    - name: Ground1KitV5_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 91, y: -82.347534}
+        - {x: 91, y: 47.652466}
+        - {x: 62, y: 70.652466}
+        - {x: -48, y: 70.652466}
+        - {x: -97, y: -18.347534}
+        - {x: -97, y: -102.347534}
+        - {x: 91, y: -102.347534}
+        - {x: 91, y: -95.347534}
+        - {x: 90, y: -91.347534}
+    - name: Ground1KitV5_55
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.72223, y: -19.347534}
+        - {x: -60.72223, y: -24.347534}
+        - {x: -88.72223, y: -71.347534}
+        - {x: -88.72223, y: -102.347534}
+        - {x: 86.27777, y: -102.347534}
+        - {x: 86.27777, y: -65.347534}
+        - {x: 48.27777, y: -19.347534}
+      - - {x: -101.72223, y: 102.652466}
+        - {x: -101.72223, y: 99.652466}
+        - {x: 103.27777, y: 99.652466}
+        - {x: 103.27777, y: 102.652466}
+    - name: Ground1KitV5_56
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.944458, y: -61.347534}
+        - {x: -26.944458, y: -61.347534}
+        - {x: -39.944458, y: -85.347534}
+        - {x: -39.944458, y: -95.347534}
+        - {x: -37.944458, y: -102.347534}
+        - {x: 41.055542, y: -102.347534}
+        - {x: 42.055542, y: -97.347534}
+        - {x: 42.055542, y: -83.347534}
+        - {x: 30.055542, y: -66.347534}
+    - name: Ground1KitV5_57
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81.83331, y: 6.652466}
+        - {x: -53.166687, y: 6.652466}
+        - {x: -89.16669, y: -9.347534}
+        - {x: -89.16669, y: -100.347534}
+        - {x: -85.16669, y: -102.347534}
+        - {x: 102.83331, y: -102.347534}
+        - {x: 102.83331, y: -55.347534}
+        - {x: 86.83331, y: 1.6524658}
+      - - {x: 44.833313, y: -78.347534}
+        - {x: 38.833313, y: -78.347534}
+        - {x: 29.833313, y: -87.347534}
+        - {x: 27.833313, y: -102.347534}
+        - {x: 47.833313, y: -102.347534}
+        - {x: 47.833313, y: -79.347534}
+    - name: Ground1KitV5_58
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.388916, y: 102.652466}
+        - {x: -1.388916, y: 99.652466}
+        - {x: 102.611084, y: 99.652466}
+        - {x: 102.611084, y: 102.652466}
+    - name: Ground1KitV5_59
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.611084, y: 102.652466}
+        - {x: -101.611084, y: 99.652466}
+        - {x: 103.388916, y: 99.652466}
+        - {x: 103.388916, y: 102.652466}
+    - name: Ground1KitV5_60
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.833374, y: 79.652466}
+        - {x: -5.833374, y: 81.652466}
+        - {x: -75.833374, y: 81.652466}
+        - {x: -90.833374, y: 11.652466}
+        - {x: -90.833374, y: -97.347534}
+        - {x: -85.833374, y: -102.347534}
+        - {x: 91.166626, y: -102.347534}
+        - {x: 100.166626, y: -92.347534}
+        - {x: 100.166626, y: -31.347534}
+        - {x: 62.166626, y: 13.652466}
+      - - {x: -101.833374, y: 102.652466}
+        - {x: -101.833374, y: 99.652466}
+        - {x: 1.166626, y: 99.652466}
+        - {x: 3.166626, y: 101.652466}
+        - {x: 3.166626, y: 102.652466}
+    - name: Ground1KitV5_61
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36.055542, y: -18.347534}
+        - {x: -50.055542, y: -49.347534}
+        - {x: -61.055542, y: -80.347534}
+        - {x: -61.055542, y: -100.347534}
+        - {x: -60.055542, y: -102.347534}
+        - {x: 64.94446, y: -102.347534}
+        - {x: 65.94446, y: -99.347534}
+        - {x: 65.94446, y: -80.347534}
+        - {x: 15.944458, y: -18.347534}
+      - - {x: -102.05554, y: 102.652466}
+        - {x: -102.05554, y: 99.652466}
+        - {x: 102.94446, y: 99.652466}
+        - {x: 102.94446, y: 102.652466}
+    - name: Ground1KitV5_62
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.27783, y: 102.652466}
+        - {x: -102.27783, y: -21.347534}
+        - {x: -31.277832, y: -97.347534}
+        - {x: 24.722168, y: -97.347534}
+        - {x: 98.72217, y: 47.652466}
+        - {x: 102.72217, y: 78.652466}
+        - {x: 102.72217, y: 102.652466}
+      - - {x: 22.722168, y: -32.347534}
+        - {x: 10.722168, y: -49.347534}
+        - {x: 10.722168, y: -73.347534}
+        - {x: 13.722168, y: -80.347534}
+        - {x: 41.722168, y: -80.347534}
+        - {x: 45.722168, y: -72.347534}
+        - {x: 45.722168, y: -36.347534}
+        - {x: 37.722168, y: -32.347534}
+      - - {x: 48.722168, y: -26.347534}
+        - {x: 43.722168, y: -26.347534}
+        - {x: 38.722168, y: -31.347534}
+        - {x: 38.722168, y: -47.347534}
+        - {x: 42.722168, y: -49.347534}
+        - {x: 48.722168, y: -49.347534}
+        - {x: 52.722168, y: -44.347534}
+        - {x: 53.722168, y: -38.347534}
+        - {x: 53.722168, y: -28.347534}
+    - name: Ground1KitV5_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 102.874664}
+        - {x: -102, y: -102.125336}
+        - {x: 102, y: -102.125336}
+        - {x: 102, y: 102.874664}
+    - name: Ground1KitV5_64
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: 102.874664}
+        - {x: -101.72223, y: -102.125336}
+        - {x: 103.27777, y: -102.125336}
+        - {x: 103.27777, y: 102.874664}
+    - name: Ground1KitV5_65
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.94446, y: 102.874664}
+        - {x: -101.94446, y: -102.125336}
+        - {x: 103.05554, y: -102.125336}
+        - {x: 103.05554, y: 102.874664}
+    - name: Ground1KitV5_66
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.16669, y: 102.874664}
+        - {x: -102.16669, y: -102.125336}
+        - {x: 102.83331, y: -102.125336}
+        - {x: 102.83331, y: 102.874664}
+    - name: Ground1KitV5_67
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ground1KitV5_68
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -79.833374, y: 102.874664}
+        - {x: -78.833374, y: 99.874664}
+        - {x: 85.166626, y: 99.874664}
+        - {x: 87.166626, y: 101.874664}
+        - {x: 87.166626, y: 102.874664}
+    - name: Ground1KitV5_69
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1002
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59.055542, y: 102.874664}
+        - {x: -58.055542, y: 99.874664}
+        - {x: 60.944458, y: 99.874664}
+        - {x: 62.944458, y: 101.874664}
+        - {x: 62.944458, y: 102.874664}
+    - name: Ground1KitV5_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 103.09689}
+        - {x: -102, y: -101.90311}
+        - {x: 102, y: -101.90311}
+        - {x: 102, y: 103.09689}
+    - name: Ground1KitV5_71
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: 103.09689}
+        - {x: -101.72223, y: -101.90311}
+        - {x: 103.27777, y: -101.90311}
+        - {x: 103.27777, y: 103.09689}
+    - name: Ground1KitV5_72
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.94446, y: 103.09689}
+        - {x: -101.94446, y: -101.90311}
+        - {x: 103.05554, y: -101.90311}
+        - {x: 103.05554, y: 103.09689}
+    - name: Ground1KitV5_73
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.16669, y: 103.09689}
+        - {x: -102.16669, y: -101.90311}
+        - {x: 102.83331, y: -101.90311}
+        - {x: 102.83331, y: 103.09689}
+    - name: Ground1KitV5_74
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 502
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ground1KitV5_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 103.319115}
+        - {x: -102, y: -101.680885}
+        - {x: 102, y: -101.680885}
+        - {x: 102, y: 103.319115}
+    - name: Ground1KitV5_76
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.72223, y: 103.319115}
+        - {x: -101.72223, y: -101.680885}
+        - {x: 103.27777, y: -101.680885}
+        - {x: 103.27777, y: 103.319115}
+    - name: Ground1KitV5_77
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.94446, y: 103.319115}
+        - {x: -101.94446, y: -101.680885}
+        - {x: 103.05554, y: -101.680885}
+        - {x: 103.05554, y: 103.319115}
+    - name: Ground1KitV5_78
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.16669, y: 103.319115}
+        - {x: -102.16669, y: -101.680885}
+        - {x: 102.83331, y: -101.680885}
+        - {x: 102.83331, y: 103.319115}
+    - name: Ground1KitV5_79
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ground1KitV5_80
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 98.94446, y: 103.319115}
+        - {x: 98.94446, y: -101.680885}
+        - {x: 102.94446, y: -101.680885}
+        - {x: 102.94446, y: 103.319115}
+    - name: Ground1KitV5_81
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.27783, y: 103.319115}
+        - {x: -102.27783, y: -101.680885}
+        - {x: 102.72217, y: -101.680885}
+        - {x: 102.72217, y: 103.319115}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
