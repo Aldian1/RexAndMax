@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Mr_1_1_Debug.unity
+- path: Assets/Levels/Scene_Luiz2.unity
   isLoaded: 1
   isActive: 1
